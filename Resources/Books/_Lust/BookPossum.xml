@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<book>
+  <locale id="en-US">
+    <page>
+      <p>Once upon a time, in the deep woods of the Appalachian Mountains, there lived a possum named Morty. Morty was an ambitious possum, always seeking to climb higher and higher up the social ladder of the forest. Morty had a keen mind, and he was always thinking of ways to increase his status.</p>
+    </page>
+    <page>
+      <p>One day, Morty stumbled upon a conspiracy within the forest. A group of animals, including several high-ranking officials in the forest council, were planning to overthrow the current leadership and take over the forest. Morty was intrigued by the possibility of gaining power, and he decided to join the conspiracy.</p>
+      <p>Morty worked hard to prove his loyalty to the conspirators. He gathered information and leaked it to the group, and he helped to plan their attack. When the day of the coup came, Morty was right in the middle of it all, ready to claim his place at the top of the forest hierarchy.</p>
+    </page>
+    <page>
+      <p>However, the coup was quickly put down by the forest council. Morty and the other conspirators were captured and brought to trial. Morty was charged with high treason for his part in the plot to overthrow the government.</p>
+      <p>At his trial, Morty showed no remorse for his actions. He argued that he was simply trying to improve his own position in the forest, and that the current leadership was corrupt and ineffective. But the council was not swayed by Morty's arguments. They found him guilty of treason and sentenced him to banishment from the forest.</p>
+    </page>
+    <page>
+      <p>Morty was devastated by the verdict. He had dreamed of rising to the top of the forest hierarchy, but now he was an outcast, forced to live on the fringes of the forest. He realized too late that his desire for power had blinded him to the importance of loyalty and duty to the forest community.</p>
+      <p>From that day on, Morty lived a solitary life, wandering through the woods and regretting the choices that had led him to commit high treason.</p>
+    </page>
+  </locale>
+  <locale id="ru-RU">
+    <page>
+      <p>Давным-давно в глухом лесу Аппалачских гор жил опоссум по имени Морти. Морти был амбициозным опоссумом, который всегда стремился подняться всё выше и выше по социальной лестнице леса. У Морти был острый ум, и он постоянно думал о том, как повысить свой статус.</p>
+    </page>
+    <page>
+      <p>Однажды Морти наткнулся на заговор в лесу. Группа животных, среди которых было несколько высокопоставленных чиновников лесного совета, планировала свергнуть нынешнее руководство и захватить лес. Морти заинтриговала возможность получить власть, и он решил присоединиться к заговору.</p>
+      <p>Морти упорно трудился, чтобы доказать свою преданность заговорщикам. Он собирал информацию и передавал её группе, а также помогал планировать нападение. Когда настал день переворота, Морти был в самом центре событий, готовый занять своё место на вершине лесной иерархии.</p>
+    </page>
+    <page>
+      <p>Однако переворот был быстро подавлен лесным советом. Морти и другие заговорщики были схвачены и предстали перед судом. Морти был обвинён в государственной измене за участие в заговоре с целью свержения правительства.</p>
+      <p>На суде Морти не раскаялся в своих действиях. Он утверждал, что просто пытался улучшить своё положение в лесу, а нынешнее руководство было коррумпированным и неэффективным. Но совет не поколебали доводы Морти. Они признали его виновным в измене и приговорили к изгнанию из леса.</p>
+    </page>
+    <page>
+      <p>Морти был опустошён приговором. Он мечтал подняться на вершину лесной иерархии, но теперь он стал изгоем, вынужденным жить на задворках леса. Он слишком поздно понял, что стремление к власти ослепило его, и он перестал понимать важность верности и долга перед лесным сообществом.</p>
+      <p>С того дня Морти жил в одиночестве, бродя по лесу и сожалея о выборе, который привёл его к государственной измене.</p>
+    </page>
+  </locale>
+</book>

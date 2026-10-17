@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<book>
+  <locale id="en-US">
+    <page>
+      <p>I don't know who "they" are, but I can feel their eyes on me. It's like a prickling sensation on the back of my neck, and it won't go away. No matter where I go or what I do, I can feel them watching me.</p>
+    </page>
+    <page>
+      <p>It's not just my imagination, either. I've caught glimpses of shadowy figures in the corners of my vision, lurking just out of sight. I've heard footsteps echoing down the halls when I know I'm alone. And there have been times when I've felt a hand on my shoulder, only to turn around and find no one there.</p>
+      <p>I've tried to ignore it, tried to tell myself that it's just paranoia. But the feeling is too strong, too real. I can't shake the sense that something is very wrong.</p>
+    </page>
+    <page>
+      <p>I've started to keep a log of all the strange occurrences, but it only adds to my unease. The entries pile up day after day, documenting every instance of the feeling of being watched. It's like a never-ending nightmare that I can't wake up from.</p>
+      <p>The worst part is not knowing who is behind it all. It could be anyone on this space station, or it could be something more sinister. I've tried to approach Joe Mendez, the Head of Security, about it, but he just brushes me off. He says there's nothing to worry about, that it's just my imagination getting the best of me.</p>
+    </page>
+    <page>
+      <p>But I know that's not true. The feeling of being watched is too strong, too persistent. I'm starting to fear for my safety. What if "they" are planning something? What if I'm in danger?</p>
+      <p>I don't know what to do, but I can't keep living like this. The constant surveillance is driving me to madness. I need to find out who is behind it all and put a stop to it before it's too late.</p>
+    </page>
+  </locale>
+  <locale id="ru-RU">
+    <page>
+      <p>Я не знаю, кто "они", но я чувствую их взгляд на себе. Это похоже на колючее ощущение на шее, и оно не проходит. Неважно, куда я иду и что делаю, я    чувствую, что они наблюдают за мной.</p>
+    </page>
+    <page>
+      <p>И это не только моё воображение. В уголках моего зрения мелькают теневые фигуры, скрывающиеся от глаз. Я слышал шаги, отдающиеся эхом по коридорам, когда я знал, что я один. Бывало и так, что я чувствовал руку на своём плече, но, обернувшись, никого не обнаруживал.</p>
+      <p>Я пытался игнорировать это, пытался сказать себе, что это просто паранойя. Но это ощущение слишком сильное, слишком реальное. Я не могу избавиться от ощущения, что что-то очень плохо.</p>
+    </page>
+    <page>
+      <p>Я начал записывать все странные происшествия, но это только усиливает мою тревогу. Записи накапливаются день за днём, документируя каждый случай ощущения, что за мной наблюдают. Это похоже на бесконечный кошмар, от которого я не могу проснуться.</p>
+      <p>Хуже всего то, что я не знаю, кто за всем этим стоит. Это может быть кто угодно на этой космической станции, а может быть и что-то более зловещее. Я пытался поговорить об этом с Джо Мендесом, начальником службы безопасности, но он просто отмахнулся от меня. Он говорит, что беспокоиться не о чем, что это просто моё воображение разыгралось.</p>
+    </page>
+    <page>
+      <p>Но я знаю, что это неправда. Ощущение, что за мной наблюдают, слишком сильное, слишком настойчивое. Я начинаю бояться за свою безопасность. Что, если "они" что-то планируют? Что, если я в опасности?</p>
+      <p>Я не знаю, что делать, но я не могу продолжать жить так. Постоянная слежка доводит меня до безумия. Мне нужно выяснить, кто за всем этим стоит, и положить этому конец, пока не стало слишком поздно.</p>
+    </page>
+  </locale>
+</book>

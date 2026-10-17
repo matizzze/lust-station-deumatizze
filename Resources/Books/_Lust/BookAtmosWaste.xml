@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<book>
+  <locale id="en-US">
+    <page>
+      <p>The waste network is the primary system responsible for keeping the air on the station free of contaminants.</p>
+    </page>
+    <page>
+      <p>You can identify the relevant pipes by their Pleasing Dull Red color or by using a tray scanner to trace which pipes are connected to the scrubbers on the station.</p>
+      <p>The waste network is used to transport waste gasses to either be filtered or spaced. It is ideal to keep the pressure at 0 kPa, but it may sometimes be at a low non-zero pressure while in use.</p>
+    </page>
+    <page>
+      <p>Technicians have the option to filter or space the waste gasses. While spacing is faster, filtering allows for the gasses to be reused for recycling or selling.</p>
+      <p>The waste network can also be used to diagnose atmospheric issues on the station. High levels of a waste gas may suggest a large leak, while the presence of non-waste gases may indicate a scrubber configuration or physical connection issue. If the gases are at a high temperature, it could indicate a fire.</p>
+    </page>
+  </locale>
+  <locale id="ru-RU">
+    <page>
+      <p>Сеть отходов это основная система отвечающая за сохранения воздуха свободным от загрязнений.</p>
+    </page>
+    <page>
+      <p>Вы можете распознать эти трубы по их Приятно-Тусклому Красному цвету или используя т-лучевой сканер, чтобы отследить какие трубы подсоединены к скрубберам на станции.</p>
+      <p>Сеть отходов используется для транспортировки ненужных газов либо для фильтрации, либо для выброса в космос. Это идеально для поддержания давления на 0 кПа, но временами может быть низкое, не нулевое давление во время использования.</p>
+    </page>
+    <page>
+      <p>Атмос техники могут выбрать фильтровать или выбрасывать газы в космос. Выбрасывание быстрее, но фильтрация позволяет повторно использовать или продавать газы.</p>
+      <p>Сеть отходов может помочь диагностировать атмосферные проблемы на станции. Высокое количество отходов может указывать на большую утечку, в то время как присутствие не отходов может указывать на ошибку в конфигурации скруббера либо проблему с физическим подсоединением. Если у газов высокая температура, это может означать пожар.</p>
+    </page>
+  </locale>
+</book>

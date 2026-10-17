@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<book>
+  <locale id="en-US">
+    <page>
+      <p>Below is a quick reference guide to several atmospheric devices:</p>
+    </page>
+    <page>
+      <p>Passive Vents:
+These vents don't require power, they allow gases to flow freely both into and out of the pipe network they are attached to.</p>
+      <p>Active Vents:
+These are the most common vents on the station. They have an internal pump, and require power. By default, they will only pump gases out of pipes, and only up to 101 kpa. However, they can be reconfigured using an air alarm. They will also lock out if the room is under 1 kpa, to prevent pumping gasses into space.</p>
+    </page>
+    <page>
+      <p>Air Scrubbers:
+These devices allow gases to be removed from the environment and put into the connected pipe network. They can be configured to select specific gases when connected to an air alarm.</p>
+      <p>Air Injectors:
+Injectors are similar to active vents, but they have no internal pump and do not require power. They cannot be configured, but they can continue to pump gasses up to much higher pressures.</p>
+    </page>
+  </locale>
+  <locale id="ru-RU">
+    <page>
+      <p>Ниже приведён краткое руководство по нескольким атмосферным устройствам.</p>
+    </page>
+    <page>
+      <p>Пассивные вентиляции:
+Эти вентиляции не требуют питания, они позволяют газам свободно проходить как в трубопроводную сеть, к которой они присоединены, так и из неё.</p>
+      <p>Активные вентиляции:
+Это самые распространённые вентиляции на станции. Они имеют встроенный насос и требуют электричества. По умолчанию они будут выкачивать газ из труб до 101 кПа. Однако они могут быть перенастроены, используя воздушные сигнализации. Так же они будут блокироваться, когда в комнате ниже 1 кПа для предотвращения выкачивания газов в космос.</p>
+    </page>
+    <page>
+      <p>Скрубберы:
+Эти устройства позволяют убирать газы с окружающей среды в подсоединённую сеть труб. Они так же могут быть настроены для всасывания определённых газов, когда подключены к воздушной сигнализации.</p>
+      <p>Инжекторы:
+Инжекторы подобны к активным вентиляциям, но они не имеют встроенного насоса и не требуют электричества. Их нельзя настроить, но они могут продолжать качать газы до очень высокого давления.</p>
+    </page>
+  </locale>
+</book>

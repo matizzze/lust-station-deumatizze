@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<book>
+  <locale id="en-US">
+    <page>
+      <p>Dear Diary,</p>
+      <p>Today is a momentous day for the crew of the Starship Aurora. After months of floating through the vast expanse of space, they are finally landing back on Earth.</p>
+    </page>
+    <page>
+      <p>The crew has accomplished their mission, collecting data on a newly discovered planet in a neighboring solar system. It has been an incredible journey, filled with challenges, triumphs, and moments of awe-inspiring wonder.</p>
+      <p>As the ship descends through the atmosphere, the heat of reentry causes the hull to glow a fiery red, and the ship buffets against the atmosphere. It's a rough ride, but the crew is in good hands.</p>
+    </page>
+    <page>
+      <p>Finally, they touch down on solid ground, and the crew erupts into cheers and hugs. It's a hero's welcome, and it feels like they've been away for a lifetime.</p>
+      <p>As they make their way to the debriefing room, they can't stop talking about their incredible journey. They've witnessed sights that most people can only dream of, explored a planet that no one has ever seen before, and come out the other side stronger and more united than ever before.</p>
+    </page>
+    <page>
+      <p>Looking back on their journey, the crew knows that they've achieved something truly remarkable. They've pushed the boundaries of human exploration and shown that anything is possible with hard work, determination, and a little bit of luck.</p>
+      <p>Now, as they settle back into life on Earth, they know that they'll carry the memories of this journey with them forever. It has been a privilege to be a part of this crew, and they're grateful for every moment that they've shared together.</p>
+    </page>
+    <page>
+      <p>Until next time,</p>
+      <p>The anonymous member of the Starship Aurora crew.</p>
+    </page>
+  </locale>
+  <locale id="ru-RU">
+    <page>
+      <p>Дорогой дневник,</p>
+      <p>Сегодня знаменательный день для экипажа звездолёта "Аврора". После нескольких месяцев плавания по просторам космоса они наконец-то приземляются на Землю.</p>
+    </page>
+    <page>
+      <p>Экипаж выполнил свою миссию, собрав данные о недавно открытой планете в соседней солнечной системе. Это было невероятное путешествие, полное трудностей, триумфов и моментов, вызывающих благоговейный трепет.</p>
+      <p>Когда корабль спускается в атмосфере, тепло при входе в атмосферу вызывает огненно-красное свечение корпуса, и корабль ударяется об атмосферу. Это тяжёлая поездка, но экипаж находится в надёжных руках.</p>
+    </page>
+    <page>
+      <p>Наконец, они приземляются на твёрдую землю, и экипаж разражается радостными возгласами и объятиями. Это приветствие героев, и кажется, что они отсутствовали целую жизнь.</p>
+      <p>Пока они идут в комнату для переговоров, они не перестают говорить о своём невероятном путешествии. Они увидели такие достопримечательности, о которых большинство людей могут только мечтать, исследовали планету, которую никто никогда не видел, и вышли с другой стороны более сильными и сплочёнными, чем когда-либо прежде.</p>
+    </page>
+    <page>
+      <p>Оглядываясь на своё путешествие, члены экипажа понимают, что они достигли чего-то поистине выдающегося. Они расширили границы человеческих исследований и показали, что всё возможно, если упорно трудиться, проявлять решимость и немного везения.</p>
+      <p>Теперь, возвращаясь к жизни на Земле, они знают, что воспоминания об этом путешествии останутся с ними навсегда. Для них было честью быть частью этого экипажа, и они благодарны за каждое мгновение, проведённое вместе.</p>
+    </page>
+    <page>
+      <p>До следующего раза,</p>
+      <p>Анонимный член экипажа звездолёта "Аврора".</p>
+    </page>
+  </locale>
+</book>

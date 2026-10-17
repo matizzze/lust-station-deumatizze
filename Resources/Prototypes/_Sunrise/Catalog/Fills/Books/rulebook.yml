@@ -12,5 +12,6 @@
       sprite: _Sunrise/Objects/Misc/books.rsi
       layers:
         - state: book_stationsagents
-    - type: Paper
-      content: book-text-rulebook
+    - type: Book # Lust edit - Текст книги перенесён в XML.
+      contentPath: /Books/_Lust/BookStationsAndAgents.xml
+

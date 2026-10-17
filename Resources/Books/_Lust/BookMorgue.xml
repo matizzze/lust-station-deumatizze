@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<book>
+  <locale id="en-US">
+    <page>
+      <p>Morty the possum and Morticia the raccoon were the ghosts of an old morgue. The morgue had been abandoned for years, but the two animals had made it their home. They enjoyed exploring the empty hallways and playing hide-and-seek in the cold storage rooms.</p>
+      <p>One day, a group of urban explorers stumbled upon the morgue. They were shocked to find that it was still in use, despite its dilapidated condition. They cautiously made their way through the empty halls, until they heard a strange noise coming from the cold storage room.</p>
+    </page>
+    <page>
+      <p>Morty and Morticia were playing their favorite game of "who can jump the farthest" when they heard the strangers enter. They quickly hid behind some metal shelves and watched as the humans explored the room.</p>
+      <p>One of the explorers opened a door to one of the cold storage units, only to find it empty. He turned to leave, but Morticia, who was perched on top of the unit, accidentally knocked over a jar of formaldehyde, spilling its contents all over him.</p>
+    </page>
+    <page>
+      <p>The man screamed and ran out of the room, convinced that the ghosts of the morgue had attacked him. The other explorers followed suit, leaving the morgue abandoned once again.</p>
+      <p>Morty and Morticia chuckled to themselves as they watched the humans flee. They were happy to have scared off the intruders and to continue living in their beloved morgue, undisturbed.</p>
+    </page>
+  </locale>
+  <locale id="ru-RU">
+    <page>
+      <p>Опоссум Морти и енот Мортиша были призраками старого морга. Морг был заброшен уже много лет, но эти два зверька сделали его своим домом. Им нравилось исследовать пустые коридоры и играть в прятки в холодильных камерах.</p>
+      <p>Однажды группа городских исследователей наткнулась на морг. Они были потрясены, обнаружив, что он всё ещё используется, несмотря на своё ветхое состояние. Они осторожно пробирались по пустым залам, пока не услышали странный шум, доносящийся из холодильной камеры.</p>
+    </page>
+    <page>
+      <p>Морти и Мортиша играли в свою любимую игру "кто дальше всех прыгнет", когда услышали, что туда вошли незнакомцы. Они быстро спрятались за металлическими полками и стали наблюдать, как люди исследуют помещение.</p>
+      <p>Один из исследователей открыл дверь в одну из холодильных камер, но обнаружил, что она пуста. Он повернулся, чтобы уйти, но Мортиша, сидевшая на самом верху, случайно опрокинула банку с формальдегидом и вылила её содержимое на него.</p>
+    </page>
+    <page>
+      <p>Мужчина закричал и выбежал из комнаты, убеждённый, что на него напали призраки морга. Остальные исследователи последовали его примеру, оставив морг снова заброшенным.</p>
+      <p>Морти и Мортиша хихикали про себя, наблюдая за бегством людей. Они были счастливы, что спугнули незваных гостей и могут продолжать жить в своём любимом морге, никем не потревоженные.</p>
+    </page>
+  </locale>
+</book>

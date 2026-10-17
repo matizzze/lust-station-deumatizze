@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<book>
+  <locale id="en-US">
+    <page>
+      <p>As a freelance writer, Sarah was always in search of inspiration. She had traveled to many places and met a lot of people, but today she found herself wandering down an unfamiliar path in the woods. The vibrant colors of the fall leaves were mesmerizing, and she felt a surreal sense of peace as she walked further into the forest.</p>
+    </page>
+    <page>
+      <p>Suddenly, she stumbled upon a small clearing and gasped at the sight before her. A serene waterfall cascaded down a mountain, surrounded by colorful wildflowers and butterflies. Sarah couldn't believe her luck in discovering this hidden gem.</p>
+      <p>Without a moment's hesitation, Sarah took out her pen and notebook and began to write. She wrote about the beauty of the scene, the peacefulness she felt, and the surreal quality of the moment. She wanted to capture this feeling and share it with others through her words.</p>
+    </page>
+    <page>
+      <p>As she finished writing, Sarah heard the snap of a twig and looked up to see a man approaching her with a camera. He introduced himself as a nature photographer and asked if she had seen the waterfall. They struck up a conversation, and soon they were both laughing and sharing stories of their adventures.</p>
+      <p>As the sun began to set, the two of them packed up their gear and said their goodbyes. Sarah felt grateful for this unexpected encounter and the inspiration it brought her. She knew that this moment would stay with her forever, and she felt a sense of serenity knowing that there was still so much beauty in the world waiting to be discovered.</p>
+    </page>
+  </locale>
+  <locale id="ru-RU">
+    <page>
+      <p>Будучи писателем-фрилансером, Сара всегда находилась в поисках вдохновения. Она побывала во многих местах и встречалась со многими людьми, но сегодня она обнаружила себя бредущей по незнакомой тропинке в лесу. Яркие краски осенних листьев завораживали, и она ощущала сюрреалистическое чувство покоя по мере того, как углублялась в лес.</p>
+    </page>
+    <page>
+      <p>Вдруг она наткнулась на небольшую поляну и задохнулась от открывшегося перед ней вида. Безмятежный водопад каскадом стекал с горы, окружённый разноцветными полевыми цветами и бабочками. Сара не могла поверить в свою удачу, обнаружив эту скрытую жемчужину.</p>
+      <p>Не раздумывая ни секунды, Сара достала ручку и блокнот и начала писать. Она писала о красоте этой сцены, о спокойствии, которое она чувствовала, и о сюрреалистичности момента. Она хотела запечатлеть это чувство и поделиться им с другими через свои слова.</p>
+    </page>
+    <page>
+      <p>Когда она закончила писать, Сара услышала треск ветки и, подняв голову, увидела приближающегося к ней мужчину с фотоаппаратом. Он представился фотографом и спросил, видела ли она водопад. Они завязали разговор, и вскоре оба уже смеялись и делились историями о своих приключениях.</p>
+      <p>Когда солнце начало садиться, они собрали своё снаряжение и попрощались. Сара была благодарна за эту неожиданную встречу и за вдохновение, которое она ей принесла. Она знала, что этот момент останется с ней навсегда, и чувствовала спокойствие, зная, что в мире ещё так много красоты, которая ждёт своего часа.</p>
+    </page>
+  </locale>
+</book>

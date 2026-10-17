@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<book>
+  <locale id="en-US">
+    <page>
+      <p>Ian and Renault were excited to visit the beach for the first time. They had heard so many wonderful things about the sandy shores and the vast, blue ocean.</p>
+      <p>As soon as they arrived, they ran towards the sand dunes, eager to explore. They bounded up and down the hills, sniffing and digging in the sand. They found all sorts of treasures, like colorful seashells and interesting rocks.</p>
+    </page>
+    <page>
+      <p>Next, they headed towards the ocean. Ian loved to swim, while Renault preferred to paddle in the shallows. They splashed and played, enjoying the salty water on their fur.</p>
+      <p>Suddenly, they heard a distressed cry coming from the water. They quickly swam over to investigate and found a stranded sea turtle. It had gotten tangled up in some fishing nets and was unable to free itself.</p>
+    </page>
+    <page>
+      <p>Ian and Renault knew they had to act fast to save the poor turtle. Ian used his strong teeth to carefully cut through the net while Renault used her quick paws to help guide the turtle back into the water.</p>
+      <p>The grateful turtle thanked Ian and Renault with a gentle wave of its flipper, then swam away into the deep blue.</p>
+    </page>
+    <page>
+      <p>As the day drew to a close, Ian and Renault sat on the beach, watching the sunset. They felt happy and content after their exciting day at the beach.</p>
+      <p>As they made their way back home, they promised to come back to the beach and explore even more. They knew there were still many creatures and wonders to discover, and they couldn't wait to experience it all together.</p>
+    </page>
+  </locale>
+  <locale id="ru-RU">
+    <page>
+      <p>Иан и Алиса были очень рады впервые побывать на пляже. Они слышали много прекрасного о песчаных берегах и бескрайнем голубом океане.</p>
+      <p>Как только они приехали, они побежали к песчаным дюнам, жаждая исследовать их. Они носились вверх и вниз по холмам, нюхая и копаясь в песке. Они находили всевозможные сокровища, такие как разноцветные ракушки и интересные камни.</p>
+    </page>
+    <page>
+      <p>Затем они направились к океану. Иан любил плавать, а Алиса предпочитала грести на мелководье. Они плескались и играли, наслаждаясь солёной водой на своей шерсти.</p>
+      <p>Вдруг они услышали тревожный крик, доносящийся из воды. Они быстро поплыли на поиски и обнаружили выброшенную на мель морскую черепаху. Она запуталась в рыболовных сетях и не могла освободиться.</p>
+    </page>
+    <page>
+      <p>Иан и Алиса поняли, что должны действовать быстро, чтобы спасти бедную черепаху. Иан с помощью своих крепких зубов аккуратно разрезал сеть, а Алиса с помощью своих быстрых лап помогла черепахе вернуться в воду.</p>
+      <p>Благодарная черепаха поблагодарила Иана и Алису лёгким взмахом ласты, а затем уплыла в синие глубины.</p>
+    </page>
+    <page>
+      <p>Когда день подошёл к концу, Иан и Алиса сидели на пляже и любовались закатом. Они чувствовали себя счастливыми и довольными после захватывающего дня на пляже.</p>
+      <p>Возвращаясь домой, они пообещали себе вернуться на пляж и исследовать его ещё больше. Они знали, что там ещё много существ и чудес, и им не терпелось испытать всё это вместе.</p>
+    </page>
+  </locale>
+</book>

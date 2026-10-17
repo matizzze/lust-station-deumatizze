@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<book>
+  <locale id="en-US">
+    <page>
+      <p>The distribution network, or "distro" for short, is the station's lifeline. It's responsible for transporting air from atmospherics throughout the station.</p>
+    </page>
+    <page>
+      <p>Relevant pipes are often painted Popping Subdued Blue, but a surefire way to identify them is to use a tray scanner to trace which pipes are connected to active vents on the station.</p>
+      <p>The standard gas mix of the distribution network is 20 degrees celsius, 78% nitrogen, 22% oxygen. You can check this by using a gas analyzer on a distro pipe or any vent connected to it. Special circumstances may call for special mixes.</p>
+    </page>
+    <page>
+      <p>When it comes to deciding on a distro pressure, there are a few things to consider. Active vents will regulate the station's pressure, so as long as everything is functioning properly, there's no such thing as too high of a distro pressure.</p>
+      <p>A higher distro pressure will allow the distro network to act as a buffer between the gas miners and vents, providing a significant amount of extra air that can be used to re-pressurize the station after a spacing.</p>
+    </page>
+    <page>
+      <p>A lower distro pressure will reduce the amount of gas lost in the event that the distro is spaced, a quick way to deal with distro contamination. It can also help slow or prevent over-pressurization of the station in the event of vent issues.</p>
+      <p>Common distro pressures are in the range of 300-375 kPa, but other pressures can be used with knowledge of the risks and benefits.</p>
+    </page>
+    <page>
+      <p>The pressure of the network is determined by the last pump pumping into it. To prevent bottlenecks, all other pumps between the miners and the last pump should be set to their maximum rate, and any unnecessary devices should be removed.</p>
+      <p>You can validate the distro pressure with a gas analyzer, but keep in mind that high demand due to things like spacings can cause the distro to be below the set target pressure for extended periods. So, if you see a dip in pressure, don't panic - it might be temporary.</p>
+    </page>
+  </locale>
+  <locale id="ru-RU">
+    <page>
+      <p>Сеть распределения, или же "дистра", жизненно важная для станции. Она отвечает за транспортировку воздуха с атмос-отдела по всей станции.</p>
+    </page>
+    <page>
+      <p>Соответствующие трубы зачастую покрашены Выскакивающе-Приглушённым Синим, но безошибочный вариант определить их это использование т-лучевого сканера, чтобы отследить трубы подключённые к активным вентиляциям станции.</p>
+      <p>Стандартная газовая смесь для сети распределения это 20 градусов по цельсию, 78% азота, 22% кислорода. Вы можете проверить это, используя газоанализатор на трубе дистры, или любой вентиляции подключённой к ней. Особые обстоятельства могут потребовать специальных смесей.</p>
+    </page>
+    <page>
+      <p>Когда нужно думать над давлением дистры, есть несколько вещей которые нужно знать. Активные вентиляции регулируют давление на станции, так что пока всё работает стабильно, нет нужды в слишком высоком давлении дистры.</p>
+      <p>Высокое давление дистры может сделать сеть "буфером" между газодобытчиками и вентиляциями, обеспечивая значительно количество воздуха, которое может использоваться для стабилизации давления на станции после разгерметизации.</p>
+    </page>
+    <page>
+      <p>Низкое давление дистры уменьшит количество потерянного газа в случае разгерметизации сети, быстрый способ справится с загрязнением дистры. Так же это поможет уменьшить или предотвратить высокое давление на станции, в случае неполадок с вентиляциями.</p>
+      <p>Обычное давление дистры в диапазоне 300-375 кПа, но другие давления могут быть использованы со знанием пользы и риска.</p>
+    </page>
+    <page>
+      <p>Давление сети определяется последним насосом, который в неё закачивает. Для предотвращения заторов, все другие насосы между газодобытчиками и последним насосом должны стоять на максимальном значении, и все ненужные устройства должны быть убраны.</p>
+      <p>Вы можете проверить давление дистры газоанализатором, но имейте в виду, что несмотря на заданное давление в трубах, разгерметизации могут вызвать недостаток давления в трубах на некоторое время. Так что если вы видите падение давления, не паникуйте - это может быть временно.</p>
+    </page>
+  </locale>
+</book>

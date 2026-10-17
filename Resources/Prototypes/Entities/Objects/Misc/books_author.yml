@@ -18,8 +18,8 @@
         color: "#911129"
       - state: detail_bookmark
         color: red 
-    - type: Paper
-      content: book-text-narsielegend
+    - type: Book # Lust edit - Текст книги перенесён в XML.
+      contentPath: /Books/_Lust/BookNarsieLegend.xml
 
 - type: entity
   parent: BookBase
@@ -40,8 +40,8 @@
       - state: icon_question
       - state: detail_bookmark
         color: "#cf792d"
-    - type: Paper
-      content: book-text-truth
+    - type: Book # Lust edit - Текст книги перенесён в XML.
+      contentPath: /Books/_Lust/BookTruth.xml
 
 - type: entity
   parent: BookBase
@@ -59,8 +59,8 @@
       - state: icon_text
       - state: detail_bookmark
         color: "#2dab24"
-    - type: Paper
-      content: book-text-world
+    - type: Book # Lust edit - Текст книги перенесён в XML.
+      contentPath: /Books/_Lust/BookWorld.xml
 
 - type: entity
   parent: BookBase
@@ -79,8 +79,8 @@
       - state: icon_ian
       - state: detail_bookmark
         color: "#ab5e24"
-    - type: Paper
-      content: book-text-ian-antarctica
+    - type: Book # Lust edit - Текст книги перенесён в XML.
+      contentPath: /Books/_Lust/BookIanAntarctica.xml
 
 - type: entity
   parent: BookBase
@@ -101,8 +101,8 @@
       - state: icon_banana
       - state: detail_bookmark
         color: "#f7cc2f"
-    - type: Paper
-      content: book-text-sloth-clown-sss
+    - type: Book # Lust edit - Текст книги перенесён в XML.
+      contentPath: /Books/_Lust/BookSlothClownSSS.xml
 
 - type: entity
   parent: BookBase
@@ -123,8 +123,8 @@
       - state: icon_banana
       - state: detail_bookmark
         color: "#ab22ba"
-    - type: Paper
-      content: book-text-sloth-clown-pz
+    - type: Book # Lust edit - Текст книги перенесён в XML.
+      contentPath: /Books/_Lust/BookSlothClownPranks.xml
 
 - type: entity
   parent: BookBase
@@ -145,8 +145,8 @@
       - state: icon_scmmd
       - state: detail_bookmark
         color: "#ab22ba"
-    - type: Paper
-      content: book-text-sloth-clown-mmd
+    - type: Book # Lust edit - Текст книги перенесён в XML.
+      contentPath: /Books/_Lust/BookSlothClownMMD.xml
 
 - type: entity
   parent: BookBase
@@ -170,8 +170,8 @@
         color: "#f7bb2f"
       - state: detail_bookmark
         color: "#f7bb2f"
-    - type: Paper
-      content: book-text-struck
+    - type: Book # Lust edit - Текст книги перенесён в XML.
+      contentPath: /Books/_Lust/BookStruck.xml
 
 - type: entity
   parent: BookBase
@@ -194,8 +194,8 @@
         color: "#f7bb2f"
       - state: detail_rivets
         color: "#f7bb2f"
-    - type: Paper
-      content: book-text-sun
+    - type: Book # Lust edit - Текст книги перенесён в XML.
+      contentPath: /Books/_Lust/BookSun.xml
 
 - type: entity
   parent: BookBase
@@ -213,8 +213,8 @@
       - state: detail_bookmark
         color: "#2b593d"
       - state: overlay_blood
-    - type: Paper
-      content: book-text-possum
+    - type: Book # Lust edit - Текст книги перенесён в XML.
+      contentPath: /Books/_Lust/BookPossum.xml
 
 - type: entity
   parent: BookBase
@@ -231,8 +231,8 @@
       - state: icon_possum
       - state: detail_bookmark
         color: "#2b593d"
-    - type: Paper
-      content: book-text-cafe
+    - type: Book # Lust edit - Текст книги перенесён в XML.
+      contentPath: /Books/_Lust/BookCafe.xml
 
 - type: entity
   parent: BookBase
@@ -252,8 +252,8 @@
       - state: icon_magic
       - state: detail_bookmark
         color: "#7396f5"
-    - type: Paper
-      content: book-text-feather
+    - type: Book # Lust edit - Текст книги перенесён в XML.
+      contentPath: /Books/_Lust/BookFeather.xml
 
 - type: entity
   parent: BookBase
@@ -272,8 +272,8 @@
       - state: icon_ian
       - state: detail_bookmark
         color: "#ab5e24"
-    - type: Paper
-      content: book-text-ian-wolfpup
+    - type: Book # Lust edit - Текст книги перенесён в XML.
+      contentPath: /Books/_Lust/BookIanLostWolfPup.xml
 
 - type: entity
   parent: BookBase
@@ -292,8 +292,8 @@
       - state: icon_ian
       - state: detail_bookmark
         color: "#ab5e24"
-    - type: Paper
-      content: book-text-ian-ranch
+    - type: Book # Lust edit - Текст книги перенесён в XML.
+      contentPath: /Books/_Lust/BookIanRanch.xml
 
 - type: entity
   parent: BookBase
@@ -312,8 +312,8 @@
       - state: icon_ian
       - state: detail_bookmark
         color: "#ab5e24"
-    - type: Paper
-      content: book-text-ian-ocean
+    - type: Book # Lust edit - Текст книги перенесён в XML.
+      contentPath: /Books/_Lust/BookIanOcean.xml
 
 - type: entity
   parent: BookBase
@@ -331,8 +331,8 @@
       - state: icon_ian
       - state: detail_bookmark
         color: "#ab5e24"
-    - type: Paper
-      content: book-text-ian-mountain
+    - type: Book # Lust edit - Текст книги перенесён в XML.
+      contentPath: /Books/_Lust/BookIanMountain.xml
 
 - type: entity
   parent: BookBase
@@ -351,8 +351,8 @@
       - state: icon_ian
       - state: detail_bookmark
         color: "#ab5e24"
-    - type: Paper
-      content: book-text-ian-city
+    - type: Book # Lust edit - Текст книги перенесён в XML.
+      contentPath: /Books/_Lust/BookIanCity.xml
 
 - type: entity
   parent: BookBase
@@ -373,8 +373,8 @@
       - state: icon_ian
       - state: detail_bookmark
         color: "#ab5e24"
-    - type: Paper
-      content: book-text-ian-arctic
+    - type: Book # Lust edit - Текст книги перенесён в XML.
+      contentPath: /Books/_Lust/BookIanArctic.xml
 
 - type: entity
   parent: BookBase
@@ -393,8 +393,8 @@
       - state: icon_ian
       - state: detail_bookmark
         color: "#ab5e24"
-    - type: Paper
-      content: book-text-ian-desert
+    - type: Book # Lust edit - Текст книги перенесён в XML.
+      contentPath: /Books/_Lust/BookIanDesert.xml
 
 - type: entity
   parent: BookBase
@@ -412,8 +412,8 @@
       - state: icon_letter_N
       - state: detail_bookmark
       - state: overlay_dirt
-    - type: Paper
-      content: book-text-names
+    - type: Book # Lust edit - Текст книги перенесён в XML.
+      contentPath: /Books/_Lust/BookNames.xml
 
 - type: entity
   parent: BookBase
@@ -435,8 +435,8 @@
       - state: icon_text3
       - state: detail_bookmark
         color: "#2c5491"
-    - type: Paper
-      content: book-text-earth
+    - type: Book # Lust edit - Текст книги перенесён в XML.
+      contentPath: /Books/_Lust/BookEarth.xml
 
 - type: entity
   parent: BookBase
@@ -460,8 +460,8 @@
         color: "#2c5491"
       - state: detail_rivets
         color: "#799dd4"
-    - type: Paper
-      content: book-text-aurora
+    - type: Book # Lust edit - Текст книги перенесён в XML.
+      contentPath: /Books/_Lust/BookAurora.xml
 
 - type: entity
   parent: BookBase
@@ -482,8 +482,8 @@
       - state: icon_temple
       - state: detail_bookmark
         color: "#bfbfbf"
-    - type: Paper
-      content: book-text-temple
+    - type: Book # Lust edit - Текст книги перенесён в XML.
+      contentPath: /Books/_Lust/BookTemple.xml
 
 - type: entity
   parent: BookBase
@@ -504,8 +504,8 @@
       - state: icon_eye
       - state: detail_bookmark
         color: "#bfbfbf"
-    - type: Paper
-      content: book-text-watched
+    - type: Book # Lust edit - Текст книги перенесён в XML.
+      contentPath: /Books/_Lust/BookWatched.xml
 
 - type: entity
   parent: BookBase
@@ -525,8 +525,8 @@
         color: "#55b0d4"
       - state: detail_bookmark
         color: "#55b0d4"
-    - type: Paper
-      content: book-text-medical-officer
+    - type: Book # Lust edit - Текст книги перенесён в XML.
+      contentPath: /Books/_Lust/BookMedicalOfficer.xml
 
 - type: entity
   parent: BookBase
@@ -545,8 +545,8 @@
       - state: overlay_dirt
       - state: detail_bookmark
         color: "#61363d"
-    - type: Paper
-      content: book-text-morgue
+    - type: Book # Lust edit - Текст книги перенесён в XML.
+      contentPath: /Books/_Lust/BookMorgue.xml
 
 - type: entity
   parent: BookBase
@@ -570,8 +570,8 @@
         color: "#61363d"
       - state: detail_rivets
         color: "#ffde7d"
-    - type: Paper
-      content: book-text-rufus
+    - type: Book # Lust edit - Текст книги перенесён в XML.
+      contentPath: /Books/_Lust/BookRufus.xml
 
 - type: entity
   parent: BookBase
@@ -593,8 +593,8 @@
         color: "#61363d"
       - state: detail_rivets
         color: "#ffde7d"
-    - type: Paper
-      content: book-text-map
+    - type: Book # Lust edit - Текст книги перенесён в XML.
+      contentPath: /Books/_Lust/BookMap.xml
 
 - type: entity
   parent: BookBase
@@ -614,8 +614,8 @@
         color: "#61363d"
       - state: detail_rivets
         color: "#ffde7d"
-    - type: Paper
-      content: book-text-journ-mount
+    - type: Book # Lust edit - Текст книги перенесён в XML.
+      contentPath: /Books/_Lust/BookJourney.xml
 
 - type: entity
   parent: BookBase
@@ -636,8 +636,8 @@
       - state: icon_tree
       - state: detail_bookmark
         color: "#61363d"
-    - type: Paper
-      content: book-text-inspiration
+    - type: Book # Lust edit - Текст книги перенесён в XML.
+      contentPath: /Books/_Lust/BookInspiration.xml
 
 - type: entity
   parent: BookBase
@@ -656,6 +656,6 @@
     - state: detail_bookmark
       color: "#61363d"
     - state: overlay_dirt
-  - type: Paper
-    content: book-text-janitor
+  - type: Book # Lust edit - Текст книги перенесён в XML.
+    contentPath: /Books/_Lust/BookJanitorTale.xml
 

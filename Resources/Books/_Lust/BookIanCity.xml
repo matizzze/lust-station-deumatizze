@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<book>
+  <locale id="en-US">
+    <page>
+      <p>Ian and Renault were used to exploring the great outdoors, but they had never experienced the hustle and bustle of the city. They were excited to see what adventures awaited them among the towering skyscrapers and bustling streets.</p>
+      <p>As they made their way into the city, they were overwhelmed by the sights, sounds, and smells. The honking of car horns, the chatter of people on their phones, and the smell of hot dogs and pretzels filled the air.</p>
+    </page>
+    <page>
+      <p>They started exploring the streets, marveling at the towering skyscrapers that surrounded them. They even managed to sneak into one of the buildings and ride the elevator all the way to the top floor.</p>
+      <p>From the top, they had an amazing view of the city, with its towering buildings and busy streets below. They looked down and saw all sorts of people and animals, from pigeons to dogs to cats, all going about their daily lives.</p>
+    </page>
+    <page>
+      <p>As they made their way down, they explored the busy streets, dodging in and out of crowds and navigating through busy intersections. They even made friends with a group of squirrels who were scavenging for food in a nearby park.</p>
+      <p>At one point, they came across a lost kitten who had strayed too far from her home. Ian and Renault knew just what to do, having rescued stranded sea creatures and helped lost hikers in the past. They used their keen sense of smell to track down the kitten's owner and reunited her with her worried family.</p>
+    </page>
+    <page>
+      <p>As the day turned into night, they were exhausted but happy from their adventure in the city. They made their way back home, talking excitedly about all the new experiences they had just had.</p>
+      <p>Ian and Renault knew that there were still many more adventures to be had, and they couldn't wait to see where their next journey would take them.</p>
+    </page>
+  </locale>
+  <locale id="ru-RU">
+    <page>
+      <p>Иан и Алиса привыкли исследовать природу, но они никогда не сталкивались с городской суетой. Им не терпелось узнать, какие приключения ждут их среди возвышающихся небоскрёбов и шумных улиц.</p>
+      <p>Когда они вошли в город, они были ошеломлены видами, звуками и запахами. Гудки машин, разговоры людей по телефону, запах хот-догов и кренделей наполнили воздух.</p>
+    </page>
+    <page>
+      <p>Они начали исследовать улицы, удивляясь возвышающимся небоскрёбам, которые окружали их. Им даже удалось пробраться в одно из зданий и подняться на лифте на самый верхний этаж.</p>
+      <p>Сверху открывался удивительный вид на город с его высокими зданиями и оживлёнными улицами внизу. Они посмотрели вниз и увидели множество людей и животных, от голубей до собак и кошек, которые занимались своими повседневными делами.</p>
+    </page>
+    <page>
+      <p>Спустившись вниз, они исследовали оживлённые улицы, уворачиваясь от толпы людей и проходя через оживлённые перекрёстки. Они даже подружились с группой белок, которые искали еду в соседнем парке.</p>
+      <p>В какой-то момент они наткнулись на потерявшегося котёнка, который забрёл слишком далеко от своего дома. Иан и Алиса знали, что делать, ведь в прошлом они спасали выбросившихся на берег морских животных и помогали заблудившимся туристам. Используя свой острый нюх, они разыскали хозяина котёнка и вернули его обеспокоенной семье.</p>
+    </page>
+    <page>
+      <p>Когда день перешёл в ночь, они были измотаны, но счастливы от своего приключения в городе. Они возвращались домой, возбуждённо обсуждая все новые впечатления, которые только что получили.</p>
+      <p>Иан и Алиса знали, что их ждёт ещё много приключений, и им не терпелось узнать, куда приведёт их следующее путешествие.</p>
+    </page>
+  </locale>
+</book>

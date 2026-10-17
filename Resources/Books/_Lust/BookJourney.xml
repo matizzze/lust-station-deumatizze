@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<book>
+  <locale id="en-US">
+    <page>
+      <p>Lena had always been drawn to the mesmerizing beauty of the mountains. The way the peaks rose up against the sky, the crisp air, and the sense of freedom they inspired. She loved the challenge of daring to climb higher and higher, until she reached the summit and looked out over the world below.</p>
+      <p>But Lena wasn't just a mountain climber - she was also an accomplished guitarist. As she sat by the campfire each night, strumming her instrument and singing songs that echoed through the valleys, she felt truly alive.</p>
+    </page>
+    <page>
+      <p>One day, as Lena was trekking through a particularly challenging section of the mountain, she heard laughter echoing through the air. She paused for a moment, trying to locate the source of the sound, and soon spotted a group of climbers up ahead. They were clearly experienced, laughing and joking as they navigated the difficult terrain with ease.</p>
+      <p>Feeling a sense of camaraderie, Lena approached the group and struck up a conversation. They were impressed by her daring spirit, and soon invited her to join them on their climb. Together, they scaled the mountain, pushing themselves to their limits and encouraging each other along the way.</p>
+    </page>
+    <page>
+      <p>As they reached the summit, Lena pulled out her guitar and began to play. The music was mesmeric, and the group fell silent, caught up in the beauty of the moment. As she finished the last notes of the song, they erupted into applause, their laughter echoing off the mountainside.</p>
+      <p>In that moment, Lena knew that she had found her true calling. She was meant to be a musician, a climber, and a source of inspiration to all those around her. And as she gazed out over the world from the mountaintop, she knew that anything was possible if she dared to dream.</p>
+    </page>
+  </locale>
+  <locale id="ru-RU">
+    <page>
+      <p>Лену всегда привлекала завораживающая красота гор. То, как вершины возвышаются на фоне неба, хрустящий воздух и чувство свободы, которое они внушали. Ей нравился вызов - смелость подниматься всё выше и выше, пока она не достигала вершины и не смотрела на мир внизу.</p>
+      <p>Но Лена была не только альпинисткой - она также была искусной гитаристкой. Каждый вечер, сидя у костра, играя на своём инструменте и распевая песни, которые эхом разносились по долинам, она чувствовала себя по-настоящему живой.</p>
+    </page>
+    <page>
+      <p>Однажды, когда Лена преодолевала особенно сложный участок горы, она услышала смех, который эхом разносился по воздуху. Она остановилась на мгновение, пытаясь определить источник звука, и вскоре заметила впереди группу альпинистов. Они были явно опытными, смеялись и шутили, с лёгкостью преодолевая сложный рельеф.</p>
+      <p>Почувствовав чувство товарищества, Лена подошла к группе и завязала разговор. Они были впечатлёны её смелостью и вскоре пригласили её присоединиться к ним в восхождении. Вместе они поднялись на гору, доводя себя до предела и подбадривая друг друга по пути.</p>
+    </page>
+    <page>
+      <p>Когда они достигли вершины, Лена достала гитару и начала играть. Музыка была завораживающей, и группа замолчала, захваченная красотой момента. Когда она закончила последние ноты песни, они разразились аплодисментами, их смех эхом отражался от склона горы.</p>
+      <p>В этот момент Лена поняла, что нашла своё истинное призвание. Она должна была стать музыкантом, альпинистом и источником вдохновения для всех окружающих. И когда она смотрела на мир с вершины горы, она знала, что всё возможно, если осмелиться мечтать.</p>
+    </page>
+  </locale>
+</book>

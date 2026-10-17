@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<book>
+  <locale id="en-US">
+    <page>
+      <p>Once upon a time, in a space station far, far away, there was a clown named Chuckles and a sloth named Snuggles. Chuckles was the funniest clown in the galaxy, but he felt a bit lonely in the space station. Snuggles, on the other hand, was the laziest sloth in the galaxy, and he loved to sleep all day long.</p>
+      <p>One day, Chuckles was feeling particularly sad, and he decided to go for a walk around the space station to cheer himself up. As he was walking, he stumbled upon Snuggles sleeping in a corner. Chuckles thought to himself, "I wonder if I could make this lazy sloth laugh."</p>
+    </page>
+    <page>
+      <p>So, Chuckles started performing his funniest clown tricks for Snuggles. He did silly dances, made funny faces, and even tried juggling some space balls. But Snuggles didn't even budge. Chuckles thought that his jokes were just not funny enough for the sloth.</p>
+      <p>But Chuckles was determined to make Snuggles laugh, so he came up with a new plan. He decided to dress up like a banana, hoping to get a reaction from the sloth. When Snuggles opened his eyes and saw Chuckles dressed up like a banana, he couldn't help but burst out laughing. Chuckles was thrilled! He had finally succeeded in making Snuggles laugh.</p>
+    </page>
+    <page>
+      <p>From that day on, Chuckles and Snuggles became best friends. Chuckles would often dress up in silly costumes to make Snuggles laugh, and Snuggles would provide a cozy spot for Chuckles to rest and tell him stories of his adventures in space. They would spend their days exploring the space station together and making each other laugh.</p>
+      <p>And so, the clown and the sloth became the happiest duo in the galaxy, spreading joy and laughter wherever they went.</p>
+    </page>
+  </locale>
+  <locale id="ru-RU">
+    <page>
+      <p>Жили-были в далёкой-далёкой космической станции клоун по имени Чаклз и ленивец по имени Снагглз. Чаклз был самым забавным клоуном в галактике, но он немного чувствовал себя одиноким на космической станции. Снагглз, с другой стороны, был самым ленивым ленивцем в галактике и любил спать целыми днями.</p>
+      <p>Однажды Чаклз был особенно грустным и решил прогуляться по космической станции, чтобы поднять себе настроение. Проходя мимо, он наткнулся на Снагглза, спящего в углу. Чаклз подумал про себя: "Интересно, смогу ли я заставить этого ленивого ленивца посмеяться".</p>
+    </page>
+    <page>
+      <p>И так Чаклз начал выполнять свои самые забавные клоунские трюки для Снагглза. Он танцевал смешные танцы, делал забавные гримасы и даже пытался жонглировать космическими шарами. Но Снагглз даже не шелохнулся. Чаклз подумал, что его шутки просто недостаточно забавные для ленивца.</p>
+      <p>Но Чаклз был настроен сделать Снагглза смеяться, поэтому он придумал новый план. Он решил нарядиться в костюм банана, надеясь вызвать реакцию у ленивца. Когда Снагглз открыл глаза и увидел Чаклза в костюме банана, он не смог сдержаться и расхохотался. Чаклз был в восторге! Он наконец-то смог сделать Снагглза смеяться.</p>
+    </page>
+    <page>
+      <p>С того дня Чаклз и Снагглз стали лучшими друзьями. Чаклз часто наряжался в смешные костюмы, чтобы заставить Снагглза смеяться, а Снагглз предоставлял уютное место для отдыха Чаклзу и рассказывал ему истории о своих приключениях в космосе. Они проводили дни, исследуя космическую станцию вместе и заставляя друг друга смеяться.</p>
+      <p>Таким образом, клоун и ленивец стали самым счастливым дуэтом в галактике, разнося радость и смех везде, где они появлялись.</p>
+    </page>
+  </locale>
+</book>

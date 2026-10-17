@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<book>
+  <locale id="en-US">
+    <page>
+      <p>As the days passed, the wandering bird came across many more enchanted places, each one more magical than the last. But as the journey continued, the bird's feathers began to lose their luster, and its once bright eyes grew dimmer.</p>
+    </page>
+    <page>
+      <p>One day, the bird stumbled upon a clearing in the forest, where a group of animals had gathered around a small pond. In the center of the pond was a shimmering feather, which glowed with a radiant light.</p>
+      <p>The bird was immediately drawn to the feather, and flew down to take a closer look. As it approached, the other animals parted ways to make room, and the bird realized that this was no ordinary feather. It was a magical feather, imbued with the power of the enchanted forest.</p>
+    </page>
+    <page>
+      <p>The bird felt a surge of energy coursing through its body as it touched the feather, and its feathers began to glow with a renewed brightness. The other animals gathered around, amazed at the transformation.</p>
+      <p>From that day on, the wandering bird was no longer lost or alone. It had found its place in the enchanted forest, and its once aimless wandering was replaced with a sense of purpose and belonging.</p>
+    </page>
+    <page>
+      <p>As the seasons changed and the years passed, the bird grew older, but its feathers remained as bright and vibrant as ever. And when it finally passed on from this world, its legacy lived on in the enchanted forest, where its memory was celebrated by all the animals who had known and loved it.</p>
+      <p>The magical feather that had once transformed the wandering bird became a symbol of hope and renewal, a reminder that even in the darkest of times, there is always the possibility of finding one's true place in the world.</p>
+    </page>
+  </locale>
+  <locale id="ru-RU">
+    <page>
+      <p>Шли дни, и странствующая птица встретила ещё много заколдованных мест, каждое из которых было волшебнее предыдущего. Но по мере того как путешествие продолжалось, перья птицы начали терять свой блеск, а её некогда яркие глаза становились всё тусклее.</p>
+    </page>
+    <page>
+      <p>Однажды птица наткнулась на поляну в лесу, где группа животных собралась вокруг небольшого пруда. В центре пруда лежало мерцающее перо, которое светилось лучистым светом.</p>
+      <p>Птицу сразу же привлекло это перо, и она полетела вниз, чтобы рассмотреть его поближе. Когда она приблизилась, другие животные расступились, чтобы освободить место, и птица поняла, что это не обычное перо. Это было волшебное перо, пропитанное силой заколдованного леса.</p>
+    </page>
+    <page>
+      <p>Прикоснувшись к перу, птица почувствовала прилив энергии, и её перья засияли с новой яркостью. Другие животные собрались вокруг, удивляясь преображению.</p>
+      <p>С этого дня блуждающая птица больше не была потерянной или одинокой. Она нашла своё место в заколдованном лесу, и её бесцельное блуждание сменилось чувством цели и принадлежности.</p>
+    </page>
+    <page>
+      <p>Сменялись времена года, птица старела, но её перья оставались такими же яркими и живыми. И когда она наконец покинула этот мир, её наследие продолжало жить в зачарованном лесу, где её память праздновали все животные, которые знали и любили её.</p>
+      <p>Волшебное перо, в которое превратилась странствующая птица, стало символом надежды и обновления, напоминанием о том, что даже в самые тёмные времена всегда есть возможность найти своё истинное место в мире.</p>
+    </page>
+  </locale>
+</book>

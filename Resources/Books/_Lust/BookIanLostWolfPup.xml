@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<book>
+  <locale id="en-US">
+    <page>
+      <p>Once upon a time, in a dense forest, there lived a friendly corgi named Ian and a clever fox named Renault. They were unlikely friends, but their adventures together were legendary.</p>
+    </page>
+    <page>
+      <p>One bright and sunny day, as they were playing catch, they heard a distant howl that seemed to be coming from the deep, dark woods. Being curious creatures, they decided to investigate the source of the noise.</p>
+      <p>As they ventured deeper into the woods, they encountered various obstacles and challenges. But with their combined wit and determination, they overcame them all.</p>
+    </page>
+    <page>
+      <p>They encountered a steep and slippery slope, but Ian used his short but sturdy legs to help them climb up. They came across a raging river, but Renault used her quick thinking to find a way across.</p>
+      <p>Finally, they reached the source of the howl. It was a lonely and scared wolf pup, lost in the woods. Ian and Renault quickly realized that they needed to help the little wolf find its way back to its family.</p>
+    </page>
+    <page>
+      <p>They used their skills and teamwork to navigate back through the woods, all the while keeping the wolf pup safe and warm. When they finally reunited the little wolf with its family, they were rewarded with warm smiles and grateful howls.</p>
+      <p>From that day on, Ian and Renault's friendship grew even stronger. They continued to have many adventures in the forest, each one more exciting than the last. And they never forgot the joy of helping others in need.</p>
+    </page>
+  </locale>
+  <locale id="ru-RU">
+    <page>
+      <p>Давным-давно в дремучем лесу жили дружелюбный корги по имени Иан и умная лиса по имени Алиса. Они были закадычными друзьями, но об их совместных приключениях ходили легенды.</p>
+    </page>
+    <page>
+      <p>Однажды ярким солнечным днём, когда они играли в мяч, они услышали далёкий вой, который, казалось, доносился из глубины тёмного леса. Будучи любопытными существами, они решили выяснить источник шума.</p>
+      <p>По мере того как они углублялись в лес, они сталкивались с различными препятствиями и трудностями. Но благодаря своей смекалке и решительности они всё преодолели.</p>
+    </page>
+    <page>
+      <p>Они столкнулись с крутым и скользким склоном, но Иан с помощью своих коротких, но крепких ног помог им подняться. Они наткнулись на бурную реку, но Алиса с помощью своего быстрого мышления нашла способ перебраться через неё.</p>
+      <p>Наконец, они добрались до источника воя. Это был одинокий и напуганный волчонок, заблудившийся в лесу. Иан и Алиса быстро поняли, что должны помочь маленькому волчонку найти дорогу к своей семье.</p>
+    </page>
+    <page>
+      <p>Они использовали свои навыки и командную работу, чтобы проложить обратный путь через лес, при этом не давая волчонку замёрзнуть и согреться. Когда они наконец воссоединили маленького волчонка с его семьёй, они были вознаграждены тёплыми улыбками и благодарным воем.</p>
+      <p>С того дня дружба Иана и Алисы стала ещё крепче. У них было ещё много приключений в лесу, каждое из которых было интереснее предыдущего. И они никогда не забывали о том, что такое помогать другим, нуждающимся в помощи.</p>
+    </page>
+  </locale>
+</book>

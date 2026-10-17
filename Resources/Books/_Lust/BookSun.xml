@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<book>
+  <locale id="en-US">
+    <page>
+      <p>I stretch my leaves towards the sky, yearning for the warmth of the sun. It's a constant desire, a primal instinct that guides me. I can feel the rays of sunlight caressing my skin, urging me to grow taller, to reach higher.</p>
+      <p>Each day, I push myself harder, reaching for the light. I feel the earth beneath me, anchoring me to this spot, but my heart is set on the sun. It's a magnetic pull, a calling that I cannot ignore.</p>
+    </page>
+    <page>
+      <p>Sometimes, it feels like the sun is teasing me, playing a game of hide and seek. The clouds roll in, blocking its rays, and I am left in the shadows. I feel the chill of the air, the absence of the sun's warmth, and I wither a little inside.</p>
+      <p>But then, the clouds part, and the sun bursts forth, flooding me with light and life. I soak it in, basking in its glow, and I feel alive. It's a reminder of why I'm here, of what I'm striving for.</p>
+    </page>
+    <page>
+      <p>As I grow, I encounter obstacles along the way. Sometimes, it's other plants, blocking my path to the sun. Other times, it's the wind, pushing me off course, threatening to topple me over. But I persevere, adapting to the challenges, always seeking the light.</p>
+      <p>It's a never-ending journey, a quest for something greater than myself. And yet, it's also a reminder of the beauty and wonder of life. I am part of this earth, part of this intricate web of existence, and the sun is my guide.</p>
+    </page>
+  </locale>
+  <locale id="ru-RU">
+    <page>
+      <p>Я протягиваю свои листья к небу, жажду тепла солнца. Это постоянное желание, первоначальный инстинкт, который меня направляет. Я чувствую лучи солнца, ласкающие мою кожу, побуждающие меня расти выше, стремиться выше.</p>
+      <p>Каждый день я усердно тянусь к свету. Я чувствую землю под собой, которая удерживает меня на месте, но моё сердце направлено на солнце. Это магнитное притяжение, зов, который я не могу проигнорировать.</p>
+    </page>
+    <page>
+      <p>Иногда кажется, что солнце издевается надо мной, играет в игру "прятки". Облака надвигаются, загораживая его лучи, и я остаюсь в тени. Я чувствую холод воздуха, отсутствие тепла солнца, и немного увядая внутри.</p>
+      <p>Но потом облака раздвигаются, и солнце прорывается вперёд, заливая меня светом и жизнью. Я впитываю его, наслаждаюсь его сиянием и чувствую себя живым. Это напоминание о том, зачем я здесь, к чему я стремлюсь.</p>
+    </page>
+    <page>
+      <p>Растущий, я сталкиваюсь с препятствиями на своём пути. Иногда это другие растения, загромождающие мой путь к солнцу. Иногда это ветер, сбивающий меня с курса, угрожающий опрокинуть меня. Но я упорствую, приспосабливаюсь к вызовам, всегда стремясь к свету.</p>
+      <p>Это бесконечное путешествие, поиски чего-то большего, чем я сам. И всё же это напоминание о красоте и чуде жизни. Я являюсь частью этой земли, частью этой сложной сети существования, и солнце - мой проводник.</p>
+    </page>
+  </locale>
+</book>

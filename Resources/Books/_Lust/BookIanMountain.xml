@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<book>
+  <locale id="en-US">
+    <page>
+      <p>Ian and Renault were excited to explore the mountains. The crisp mountain air and majestic scenery were sure to provide a memorable adventure.</p>
+      <p>They started their hike at the base of the mountain, trekking through dense forests and rocky terrain. As they climbed higher, the trees thinned out and gave way to breathtaking views of the surrounding peaks and valleys.</p>
+    </page>
+    <page>
+      <p>They came across a rushing river, where Ian couldn't resist jumping in for a refreshing swim. Renault stayed on the bank, keeping a watchful eye on her furry friend.</p>
+      <p>As they continued to climb higher, they encountered a group of mountain goats perched on a rocky outcropping. The goats looked at them curiously before scampering away.</p>
+    </page>
+    <page>
+      <p>As the sun began to set, they set up camp for the night. They built a fire and roasted marshmallows, enjoying the peaceful stillness of the mountain night.</p>
+      <p>The next morning, they woke up early to continue their hike. They climbed higher and higher, passing through a dense cloud bank until they reached the summit.</p>
+    </page>
+    <page>
+      <p>At the top, they were rewarded with a breathtaking view of the surrounding mountains and valleys. They sat down and took in the view, enjoying the peace and quiet of the summit.</p>
+      <p>As they made their way back down the mountain, they knew they had conquered a great challenge and had created memories that would last a lifetime. They talked excitedly about their next adventure, knowing that the great outdoors held many more wonders to explore.</p>
+    </page>
+  </locale>
+  <locale id="ru-RU">
+    <page>
+      <p>Иан и Алиса были рады исследовать горы. Хрустящий горный воздух и величественные пейзажи должны были стать незабываемым приключением.</p>
+      <p>Они начали свой поход у подножия горы, пробираясь через густые леса и скалистую местность. Когда они поднялись выше, деревья поредели и открылись захватывающие виды на окружающие вершины и долины.</p>
+    </page>
+    <page>
+      <p>Они наткнулись на стремительную реку, где Иан не удержался и прыгнул в воду, чтобы искупаться. Алиса осталась на берегу, не сводя глаз со своего мохнатого друга.</p>
+      <p>Продолжая подниматься выше, они встретили группу горных козлов, расположившихся на скалистом выступе. Козлы с любопытством смотрели на них, а потом бросились наутёк.</p>
+    </page>
+    <page>
+      <p>Когда солнце начало садиться, они разбили лагерь на ночь. Они развели костёр и пожарили зефир, наслаждаясь мирной тишиной горной ночи.</p>
+      <p>На следующее утро они проснулись рано, чтобы продолжить свой поход. Они поднимались всё выше и выше, проходя через густые облака, пока не достигли вершины.</p>
+    </page>
+    <page>
+      <p>На вершине перед ними открылся захватывающий вид на окружающие горы и долины. Они сели и стали любоваться видом, наслаждаясь тишиной и покоем вершины.</p>
+      <p>Спустившись с горы, они поняли, что преодолели большое испытание и создали воспоминания, которые останутся на всю жизнь. Они с воодушевлением обсуждали свои следующие приключения, зная, что великая природа таит в себе ещё много чудес.</p>
+    </page>
+  </locale>
+</book>

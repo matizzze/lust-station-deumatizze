@@ -1,0 +1,18 @@
+- type: entity
+  parent: BookBase
+  id: LustBookEditable
+  name: blank book
+  description: A hardcover book with blank pages waiting for a story.
+  components:
+  - type: Book
+    editable: true
+    pages:
+    - ""
+    - ""
+    maxPages: 32
+    contentSize: 15000
+    availableCovers:
+    - LustBookCoverPlain
+    - LustBookCoverRed
+    - LustBookCoverGreen
+    selectedCover: LustBookCoverPlain

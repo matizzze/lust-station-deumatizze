@@ -1,0 +1,53 @@
+<controls:FancyWindow xmlns="https://spacestation14.io"
+                      xmlns:controls="clr-namespace:Content.Client.UserInterface.Controls"
+                      Title="{Loc 'book-ui-title'}"
+                      SetSize="900 650" MinSize="500 300" Resizable="True">
+    <BoxContainer Orientation="Vertical" SeparationOverride="8">
+        <BoxContainer Name="ReaderContainer" Orientation="Vertical" VerticalExpand="True" SeparationOverride="8">
+            <RichTextLabel Name="ContentError" Visible="False" />
+            <BoxContainer Orientation="Horizontal" VerticalExpand="True" SeparationOverride="0">
+                <PanelContainer StyleIdentifier="PaperDefaultBorder" HorizontalExpand="True" SizeFlagsStretchRatio="1">
+                    <ScrollContainer Name="LeftPageScroll" HScrollEnabled="False" VerticalExpand="True" HorizontalExpand="True">
+                        <BoxContainer Orientation="Vertical" Margin="12" SeparationOverride="8" HorizontalExpand="True">
+                            <RichTextLabel Name="LeftPageError" StyleClasses="PaperWrittenText" Visible="False" />
+                            <BoxContainer Name="LeftPageContent" Orientation="Vertical" SeparationOverride="8" HorizontalExpand="True" />
+                        </BoxContainer>
+                    </ScrollContainer>
+                </PanelContainer>
+                <PanelContainer StyleClasses="LowDivider" MinWidth="3" VerticalExpand="True" />
+                <PanelContainer StyleIdentifier="PaperDefaultBorder" HorizontalExpand="True" SizeFlagsStretchRatio="1">
+                    <ScrollContainer Name="RightPageScroll" HScrollEnabled="False" VerticalExpand="True" HorizontalExpand="True">
+                        <BoxContainer Orientation="Vertical" Margin="12" SeparationOverride="8" HorizontalExpand="True">
+                            <RichTextLabel Name="RightPageError" StyleClasses="PaperWrittenText" Visible="False" />
+                            <BoxContainer Name="RightPageContent" Orientation="Vertical" SeparationOverride="8" HorizontalExpand="True" />
+                        </BoxContainer>
+                    </ScrollContainer>
+                </PanelContainer>
+            </BoxContainer>
+            <BoxContainer Orientation="Horizontal" SeparationOverride="8">
+                <Button Name="PreviousButton" Text="{Loc 'book-ui-previous'}" Disabled="True" />
+                <Label Name="SpreadLabel" HorizontalExpand="True" Align="Center" VerticalAlignment="Center" />
+                <Button Name="NextButton" Text="{Loc 'book-ui-next'}" Disabled="True" />
+            </BoxContainer>
+            <Button Name="EditButton" Text="{Loc 'book-ui-edit'}" Visible="False" />
+        </BoxContainer>
+        <BoxContainer Name="EditorContainer" Orientation="Vertical" VerticalExpand="True" SeparationOverride="8" Visible="False">
+            <BoxContainer Orientation="Horizontal" VerticalExpand="True" SeparationOverride="8">
+                <BoxContainer Orientation="Vertical" MinWidth="140" SeparationOverride="8">
+                    <ItemList Name="PageSelector" VerticalExpand="True" />
+                    <Button Name="AddPageButton" Text="{Loc 'book-ui-add-page'}" />
+                </BoxContainer>
+                <TextEdit Name="PageEditor" HorizontalExpand="True" VerticalExpand="True" />
+            </BoxContainer>
+            <BoxContainer Orientation="Horizontal" SeparationOverride="8">
+                <Label Text="{Loc 'book-ui-cover'}" VerticalAlignment="Center" />
+                <OptionButton Name="CoverSelector" HorizontalExpand="True" />
+            </BoxContainer>
+            <Label Name="ContentSizeLabel" />
+            <BoxContainer Orientation="Horizontal" SeparationOverride="8">
+                <Button Name="SaveButton" Text="{Loc 'book-ui-save'}" HorizontalExpand="True" />
+                <Button Name="CancelButton" Text="{Loc 'book-ui-cancel'}" HorizontalExpand="True" />
+            </BoxContainer>
+        </BoxContainer>
+    </BoxContainer>
+</controls:FancyWindow>

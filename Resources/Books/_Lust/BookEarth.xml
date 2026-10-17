@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<book>
+  <locale id="en-US">
+    <page>
+      <p>As I sit here in my tiny cabin on the space station, I can't help but think back to my youth on Earth. It seems like a lifetime ago, and in many ways it was. I was born and raised near the ocean, and it was always a part of my life. The sound of the waves crashing against the shore, the salty smell in the air, the feeling of the sand between my toes – these are all memories that I hold dear.</p>
+      <p>When I was in my 20s, I made the decision to leave Earth and join the space program. It was an exciting opportunity, and I was eager to explore the final frontier. For many years, I was content with my life on the space station. I enjoyed the camaraderie of my fellow astronauts, the thrill of discovery, and the sense of purpose that came with our mission.</p>
+    </page>
+    <page>
+      <p>But as I've grown older, I've found myself yearning for the things I left behind on Earth. The ocean, in particular, is something that I miss deeply. I remember the way the sun would reflect off the water, creating a dazzling display of light and color. I remember the feel of the cool water on my skin, and the thrill of diving beneath the waves. I remember the taste of fresh seafood, caught by local fishermen and served up in the quaint seaside restaurants.</p>
+      <p>But it's not just the ocean that I miss. I miss the feel of grass beneath my feet, the smell of flowers in the springtime, the taste of a juicy peach picked right from the tree. I miss the sound of laughter from children playing in the park, the sight of couples walking hand-in-hand along a tree-lined path. I miss the sense of community that comes with living in a small town, where everyone knows each other and looks out for one another.</p>
+    </page>
+    <page>
+      <p>Sometimes I wonder if I made the right choice in leaving Earth. But then I remember the incredible things I've seen and done in space – the breathtaking views of distant planets, the awe-inspiring power of a supernova, the camaraderie of my fellow astronauts as we worked together to accomplish our goals. These experiences have been truly amazing, and I wouldn't trade them for anything.</p>
+      <p>Still, there are moments when I feel a deep ache in my heart for the world I left behind. I wonder if I'll ever get to experience those simple pleasures again. I wonder if I'll ever feel the sand between my toes, or taste the salt in the air, or hear the sound of the waves crashing against the shore. But for now, all I can do is close my eyes and imagine that I'm back on Earth, surrounded by the things I miss the most.</p>
+    </page>
+  </locale>
+  <locale id="ru-RU">
+    <page>
+      <p>Сидя здесь, в своей крошечной каюте на космической станции, я не могу не вспоминать свою юность на Земле. Кажется, что это было целую жизнь назад, и во многом так оно и было. Я родился и вырос рядом с океаном, и он всегда был частью моей жизни. Шум волн, разбивающихся о берег, солёный запах в воздухе, ощущение песка между пальцами ног - всё это воспоминания, которые мне дороги.</p>
+      <p>Когда мне было 20 лет, я принял решение покинуть Землю и присоединиться к космической программе. Это была захватывающая возможность, и мне не терпелось исследовать последний рубеж. В течение многих лет я был доволен своей жизнью на космической станции. Я наслаждался товариществом моих коллег-астронавтов, трепетом открытий и чувством цели, которое сопутствовало нашей миссии.</p>
+    </page>
+    <page>
+      <p>Но с возрастом я стал тосковать по тому, что оставил на Земле. В частности, я очень скучаю по океану. Я помню, как солнце отражалось от воды, создавая ослепительную картину света и цвета. Я помню ощущение прохладной воды на своей коже и волнение от погружения под воду. Я помню вкус свежих морепродуктов, выловленных местными рыбаками и подаваемых в причудливых прибрежных ресторанчиках.</p>
+      <p>Но я скучаю не только по океану. Я скучаю по ощущению травы под ногами, по запаху цветов весной, по вкусу сочного персика, сорванного прямо с дерева. Я скучаю по смеху детей, играющих в парке, по парам, идущим рука об руку по дорожке, усаженной деревьями. Я скучаю по чувству общности, которое возникает при жизни в маленьком городе, где все друг друга знают и заботятся друг о друге.</p>
+    </page>
+    <page>
+      <p>Иногда я думаю, правильный ли выбор я сделал, покинув Землю. Но потом я вспоминаю невероятные вещи, которые я видел и делал в космосе - захватывающие дух виды далёких планет, благоговейную мощь сверхновой звезды, товарищество моих коллег-астронавтов, когда мы вместе работали над достижением наших целей. Эти впечатления были поистине удивительными, и я бы ни на что их не променял.</p>
+      <p>Тем не менее, бывают моменты, когда я чувствую глубокую боль в сердце по миру, который я оставил позади. Интересно, смогу ли я когда-нибудь снова испытать эти простые удовольствия? Интересно, смогу ли я когда-нибудь почувствовать песок между пальцами ног, ощутить вкус соли в воздухе или услышать шум волн, разбивающихся о берег. Но пока всё, что я могу сделать, - это закрыть глаза и представить, что я снова на Земле, в окружении вещей, по которым я скучаю больше всего.</p>
+    </page>
+  </locale>
+</book>

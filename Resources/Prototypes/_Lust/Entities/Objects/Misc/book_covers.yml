@@ -1,0 +1,17 @@
+- type: bookCover
+  id: LustBookCoverPlain
+  name: lust-book-cover-plain
+  coverState: cover_base
+  coverColor: "#a8865a"
+
+- type: bookCover
+  id: LustBookCoverRed
+  name: lust-book-cover-red
+  coverState: cover_strong
+  coverColor: "#b33b3b"
+
+- type: bookCover
+  id: LustBookCoverGreen
+  name: lust-book-cover-green
+  coverState: cover_old
+  coverColor: "#527d46"

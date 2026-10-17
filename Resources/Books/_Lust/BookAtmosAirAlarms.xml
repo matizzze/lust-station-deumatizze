@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<book>
+  <locale id="en-US">
+    <page>
+      <p>Air alarms are located throughout stations to allow management and monitoring of the local atmosphere.</p>
+      <p>The air alarm interface provides technicians with a list of connected sensors, their readings, and the ability to adjust thresholds. These thresholds are used to determine the alarm condition of the air alarm. Technicians can also use the interface to set target pressures for vents and configure the operating speeds and targeted gases for scrubbers.</p>
+    </page>
+    <page>
+      <p>While the interface allows for fine-tuning of the devices under the air alarm's control, there are also several modes available for rapid configuration of the alarm. These modes are automatically switched to when the alarm state changes:
+- Filtering: The default mode
+- Filtering (wide): A filtering mode that modifies the operation of scrubbers to scrub a wider area
+- Fill: Disables scrubbers and sets vents to their maximum pressure
+- Panic: Disables vents and sets scrubbers to siphon</p>
+      <p>A multitool or network configurator can be used to link devices to air alarms.</p>
+    </page>
+  </locale>
+  <locale id="ru-RU">
+    <page>
+      <p>Воздушные сигнализации расположены по всей станции для доступа к настройке и наблюдении за локальной атмосферой.</p>
+      <p>Интерфейс воздушной сигнализации предоставляет атмос техникам список подключённых сенсоров, их показатели и возможность настроить пороги. Пороги используются для определения аварийного состояния воздушной тревоги. Атмос техники так же могут использовать интерфейс для установки целевого давления вентиляций, настройки рабочей скорости и целевых газов для скрубберов.</p>
+    </page>
+    <page>
+      <p>Интерфейс позволяет не только точно настраивать все подключённые устройства, также доступно несколько режимов для быстрой настройки сигнализации. Эти режимы автоматически переключаются при изменении состояния тревоги:
+- Фильтрация: Обычный режим
+- Фильтрация (широкая): Режим фильтрации при котором скрубберы будут захватывать область побольше
+- Заполнение: Отключает скрубберы и ставит вентиляции на максимальное давление
+- Паника: Отключает вентиляции и ставит скрубберы на всасывание всего</p>
+      <p>Мультитулом можно подключать устройства к воздушным сигнализациям.</p>
+    </page>
+  </locale>
+</book>

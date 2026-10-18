@@ -18,7 +18,7 @@ public sealed partial class PaperRandomStorySystem : EntitySystem
 
     private void OnMapInit(Entity<PaperRandomStoryComponent> paperStory, ref MapInitEvent ev)
     {
-        // Lust edit start - Истории поддерживают книжные страницы и обычную бумагу.
+        // Lust edit start
         if (!TryComp<BookComponent>(paperStory, out var book) && !HasComp<PaperComponent>(paperStory))
             return;
         // Lust edit end
@@ -26,7 +26,7 @@ public sealed partial class PaperRandomStorySystem : EntitySystem
         if (!_storyGen.TryGenerateStoryFromTemplate(paperStory.Comp.Template, out var story))
             return;
 
-        // Lust edit start - Первая страница получает историю, остальные страницы сохраняются.
+        // Lust edit start
         if (book != null)
         {
             if (book.Pages.Count == 0)

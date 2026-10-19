@@ -20,7 +20,7 @@ using Robust.Shared.GameStates;
 namespace Content.IntegrationTests.Tests._Lust.Books;
 
 [TestFixture]
-public sealed class LustBookSystemTest
+public sealed class BookSystemTest
 {
     [TestPrototypes]
     private const string Prototypes = """
@@ -126,15 +126,11 @@ public sealed class LustBookSystemTest
         });
         await server.WaitAssertion(() =>
         {
-            using (Assert.EnterMultipleScope())
-            {
-                Assert.That(book.Comp?.Pages,
-                    Is.EqualTo(valid
-                            ? new[] { "Saved first", "Saved second", "Saved third" }
-                            : new[] { "", "" }));
-                Assert.That(book.Comp.SelectedCover, Is.EqualTo(valid ? SecondCover : FirstCover));
-                Assert.That(state, Is.Not.Null);
-            }
+            Assert.That(book.Comp.Pages, Is.EqualTo(valid
+                ? new[] { "Saved first", "Saved second", "Saved third" }
+                : new[] { "", "" }));
+            Assert.That(book.Comp.SelectedCover, Is.EqualTo(valid ? SecondCover : FirstCover));
+            Assert.That(state, Is.Not.Null);
             Assert.That(state!.EditingActors.Contains(entMan.GetNetEntity(actor)), Is.EqualTo(!valid));
             Assert.That(state.EditingActors, Does.Contain(entMan.GetNetEntity(otherActor)));
         });
@@ -160,7 +156,7 @@ public sealed class LustBookSystemTest
             entMan.System<SharedAppearanceSystem>().TryGetData(book, BookVisuals.Cover, out initialCover);
             var interaction = new InteractUsingEvent(actor, pen, book, map.GridCoords);
             entMan.EventBus.RaiseLocalEvent(book, interaction);
-            saved = entMan.System<ServerBookSystem>().TrySave(book, actor, ["Updated"], SecondCover);
+            saved = entMan.System<BookSystem>().TrySave(book, actor, ["Updated"], SecondCover);
             bookState = entMan.GetComponentState(entMan.EventBus, book.Comp, null, default);
             appearanceState = entMan.GetComponentState(entMan.EventBus,
                 entMan.GetComponent<AppearanceComponent>(book), null, default);
@@ -199,20 +195,17 @@ public sealed class LustBookSystemTest
             var interaction = new InteractUsingEvent(actor, pen, book, map.GridCoords);
             entMan.EventBus.RaiseLocalEvent(book, interaction);
             handled = interaction.Handled;
-            saved = entMan.System<ServerBookSystem>().TrySave(book, actor, pages, SecondCover);
+            saved = entMan.System<BookSystem>().TrySave(book, actor, pages, SecondCover);
             pages[0] = "Changed after save";
         });
 
         await server.WaitAssertion(() =>
         {
-            using (Assert.EnterMultipleScope())
-            {
-                Assert.That(pickedUp, Is.True);
-                Assert.That(handled, Is.True);
-                Assert.That(saved, Is.True);
-                Assert.That(book.Comp?.Pages, Is.EqualTo(["First page", "Second page", "Last page"]));
-                Assert.That(book.Comp.SelectedCover, Is.EqualTo(SecondCover));
-            }
+            Assert.That(pickedUp, Is.True);
+            Assert.That(handled, Is.True);
+            Assert.That(saved, Is.True);
+            Assert.That(book.Comp.Pages, Is.EqualTo(new[] { "First page", "Second page", "Last page" }));
+            Assert.That(book.Comp.SelectedCover, Is.EqualTo(SecondCover));
         });
         await server.WaitPost(() => entMan.System<SharedMapSystem>().DeleteMap(map.MapId));
         await pair.CleanReturnAsync();
@@ -235,9 +228,9 @@ public sealed class LustBookSystemTest
         var entMan = server.EntMan;
         var map = await pair.CreateTestMap();
         Entity<BookComponent> book = default;
-        var saved = true;
-        var pickedUp = false;
-        var editorOpened = false;
+        bool saved = true;
+        bool pickedUp = false;
+        bool editorOpened = false;
 
         await server.WaitPost(() =>
         {
@@ -282,21 +275,18 @@ public sealed class LustBookSystemTest
                     break;
             }
 
-            saved = entMan.System<ServerBookSystem>().TrySave(book, actor, pages, cover);
+            saved = entMan.System<BookSystem>().TrySave(book, actor, pages, cover);
         });
 
         await server.WaitAssertion(() =>
         {
-            using (Assert.EnterMultipleScope())
-            {
-                Assert.That(pickedUp, Is.True);
-                Assert.That(editorOpened, Is.True);
-                Assert.That(saved, Is.False);
-                Assert.That(book.Comp?.Pages, Is.EqualTo(new[] { "", "" }));
-                Assert.That(book.Comp.SelectedCover, Is.EqualTo(FirstCover));
-                Assert.That(entMan.System<SharedAppearanceSystem>().TryGetData<string>(book, BookVisuals.Cover, out var cover), Is.True);
-                Assert.That(cover, Is.EqualTo(FirstCover.Id));
-            }
+            Assert.That(pickedUp, Is.True);
+            Assert.That(editorOpened, Is.True);
+            Assert.That(saved, Is.False);
+            Assert.That(book.Comp.Pages, Is.EqualTo(new[] { "", "" }));
+            Assert.That(book.Comp.SelectedCover, Is.EqualTo(FirstCover));
+            Assert.That(entMan.System<SharedAppearanceSystem>().TryGetData<string>(book, BookVisuals.Cover, out var cover), Is.True);
+            Assert.That(cover, Is.EqualTo(FirstCover.Id));
         });
         await server.WaitPost(() => entMan.System<SharedMapSystem>().DeleteMap(map.MapId));
         await pair.CleanReturnAsync();
@@ -311,10 +301,10 @@ public sealed class LustBookSystemTest
         var server = pair.Server;
         var entMan = server.EntMan;
         var map = await pair.CreateTestMap();
-        var open = true;
+        bool open = true;
         await server.WaitPost(() =>
         {
-            var (book, actor, pen, _) = Arrange(entMan, map.GridCoords);
+            (var book, var actor, var pen, _) = Arrange(entMan, map.GridCoords);
             book.Comp.Editable = editable;
             if (!writeTool)
                 entMan.System<TagSystem>().RemoveTag(pen, WriteTag);
@@ -355,12 +345,9 @@ public sealed class LustBookSystemTest
         await server.WaitAssertion(() =>
         {
             Assert.That(state, Is.Not.Null);
-            using (Assert.EnterMultipleScope())
-            {
-                Assert.That(state!.EditingActors, Does.Not.Contain(entMan.GetNetEntity(actor)));
-                Assert.That(state.EditingActors, Does.Contain(entMan.GetNetEntity(otherActor)));
-                Assert.That(book.Comp?.Pages, Is.EqualTo(["", ""]));
-            }
+            Assert.That(state!.EditingActors, Does.Not.Contain(entMan.GetNetEntity(actor)));
+            Assert.That(state.EditingActors, Does.Contain(entMan.GetNetEntity(otherActor)));
+            Assert.That(book.Comp.Pages, Is.EqualTo(new[] { "", "" }));
         });
         await server.WaitPost(() => entMan.System<SharedMapSystem>().DeleteMap(map.MapId));
         await pair.CleanReturnAsync();

@@ -9,15 +9,15 @@ using Robust.Shared.Prototypes;
 
 namespace Content.Server._Lust.Book;
 
-public sealed partial class ServerBookSystem : EntitySystem
+public sealed partial class BookSystem : EntitySystem
 {
-    [Dependency] private ActionBlockerSystem _actionBlocker = null!;
-    [Dependency] private SharedAppearanceSystem _appearance = null!;
-    [Dependency] private SharedHandsSystem _hands = null!;
-    [Dependency] private SharedInteractionSystem _interaction = null!;
-    [Dependency] private IPrototypeManager _prototype = null!;
-    [Dependency] private TagSystem _tag = null!;
-    [Dependency] private SharedUserInterfaceSystem _userInterface = null!;
+    [Dependency] private ActionBlockerSystem _actionBlocker = default!;
+    [Dependency] private SharedAppearanceSystem _appearance = default!;
+    [Dependency] private SharedHandsSystem _hands = default!;
+    [Dependency] private SharedInteractionSystem _interaction = default!;
+    [Dependency] private IPrototypeManager _prototype = default!;
+    [Dependency] private TagSystem _tag = default!;
+    [Dependency] private SharedUserInterfaceSystem _userInterface = default!;
 
     private static readonly ProtoId<TagPrototype> WriteTag = "Write";
 
@@ -27,8 +27,7 @@ public sealed partial class ServerBookSystem : EntitySystem
         SubscribeLocalEvent<BookComponent, ComponentStartup>(OnStartup);
         SubscribeLocalEvent<BookComponent, BeforeActivatableUIOpenEvent>(OnBeforeUiOpen);
         SubscribeLocalEvent<BookComponent, InteractUsingEvent>(OnInteractUsing);
-        Subs.BuiEvents<BookComponent>(BookUiKey.Key,
-            subs =>
+        Subs.BuiEvents<BookComponent>(BookUiKey.Key, subs =>
         {
             subs.Event<BookSaveMessage>(OnSave);
             subs.Event<BoundUIClosedEvent>(OnUiClosed);
@@ -66,7 +65,8 @@ public sealed partial class ServerBookSystem : EntitySystem
         UpdateUserInterface(book);
     }
 
-    private bool TryOpenEditor(Entity<BookComponent> book, EntityUid actor, EntityUid tool)
+    /// <summary>Opens editor mode for an actor currently holding the specified writing tool.</summary>
+    public bool TryOpenEditor(Entity<BookComponent> book, EntityUid actor, EntityUid tool)
     {
         if (!CanOpenEditor(book, actor, tool))
             return false;
@@ -84,7 +84,8 @@ public sealed partial class ServerBookSystem : EntitySystem
         return true;
     }
 
-    private bool CanOpenEditor(Entity<BookComponent> book, EntityUid actor, EntityUid tool)
+    /// <summary>Checks whether the book, actor and active tool permit opening the editor.</summary>
+    public bool CanOpenEditor(Entity<BookComponent> book, EntityUid actor, EntityUid tool)
     {
         if (Deleted(book) || Deleted(actor) || !book.Comp.Editable)
             return false;
@@ -118,7 +119,8 @@ public sealed partial class ServerBookSystem : EntitySystem
         return true;
     }
 
-    private bool CanSave(Entity<BookComponent> book, EntityUid actor, List<string>? pages, ProtoId<BookCoverPrototype> cover)
+    /// <summary>Validates editor access, aggregate content limits and the selected cover.</summary>
+    public bool CanSave(Entity<BookComponent> book, EntityUid actor, List<string> pages, ProtoId<BookCoverPrototype> cover)
     {
         if (Deleted(book) || Deleted(actor) || !book.Comp.Editable)
             return false;
@@ -135,7 +137,7 @@ public sealed partial class ServerBookSystem : EntitySystem
         var remaining = book.Comp.ContentSize;
         foreach (var page in pages)
         {
-            if (page.Length > remaining)
+            if (page == null || page.Length > remaining)
                 return false;
 
             remaining -= page.Length;
@@ -154,8 +156,7 @@ public sealed partial class ServerBookSystem : EntitySystem
 
     private void UpdateUserInterface(Entity<BookComponent> book)
     {
-        _userInterface.SetUiState(book.Owner,
-            BookUiKey.Key,
+        _userInterface.SetUiState(book.Owner, BookUiKey.Key,
             new BookBoundUserInterfaceState(GetNetEntitySet(book.Comp.EditingActors)));
     }
 }

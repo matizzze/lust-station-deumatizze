@@ -136,37 +136,7 @@ public sealed class BookXmlParser
     {
         try
         {
-            ValidateAttributes(page);
-            reader.Read();
-            var nodes = new List<BookPageNode>();
-            if (!page.Empty)
-            {
-                while (ReadChild(reader))
-                {
-                    var block = reader.Current;
-                    if (block.Kind != TokenKind.StartElement)
-                        throw InvalidStructure("Only supported blocks are allowed inside a page.");
-
-                    switch (block.Name)
-                    {
-                        case "p":
-                        case "h1":
-                            ValidateAttributes(block);
-                            var children = ParseInline(reader, block, 0);
-                            nodes.Add(block.Name == "p" ? new BookParagraphNode(children) : new BookHeadingNode(children));
-                            break;
-                        case "image":
-                            nodes.Add(ParseImage(reader, block));
-                            break;
-                        default:
-                            throw InvalidStructure($"Unsupported page element <{block.Name}>.");
-                    }
-                }
-
-                reader.Read();
-            }
-
-            return new BookPageData(nodes.ToArray());
+            return new BookPageData(ParseBlocks(reader, page, -1));
         }
         catch (BookValidationException exception)
         {
@@ -177,10 +147,106 @@ public sealed class BookXmlParser
         }
     }
 
-    private static IReadOnlyList<BookPageNode> ParseInline(BookXmlReader reader, Token parent, int depth)
+    private IReadOnlyList<BookPageNode> ParseBlocks(BookXmlReader reader, Token parent, int depth)
+    {
+        return ParseElements(reader, parent, depth, (block, blockDepth) => ParseBlock(reader, block, blockDepth));
+    }
+
+    private BookPageNode ParseBlock(BookXmlReader reader, Token block, int depth)
+    {
+        ValidateDepth(depth);
+        switch (block.Name)
+        {
+            case "p":
+                ValidateAttributes(block);
+                return new BookParagraphNode(ParseInline(reader, block, depth));
+            case "h1":
+            case "h2":
+            case "h3":
+            case "h4":
+            case "h5":
+            case "h6":
+                ValidateAttributes(block);
+                return new BookHeadingNode(block.Name[1] - '0', ParseInline(reader, block, depth));
+            case "image":
+                return ParseImage(reader, block);
+            case "hr":
+                ParseEmpty(reader, block);
+                return new BookHorizontalRuleNode();
+            case "table":
+                return new BookTableNode(ParseElements(reader, block, depth, (row, rowDepth) =>
+                {
+                    RequireElement(reader, "tr");
+                    return new BookTableRowNode(ParseElements(reader, row, rowDepth, (cell, cellDepth) =>
+                    {
+                        if (cell.Name is not ("th" or "td"))
+                            throw InvalidStructure("Only <th> and <td> are allowed inside <tr>.");
+
+                        ValidateAttributes(cell);
+                        return new BookTableCellNode(cell.Name == "th", ParseInline(reader, cell, cellDepth));
+                    }, true));
+                }, true));
+            case "layout":
+                return new BookLayoutNode(ParseElements(reader, block, depth, (row, rowDepth) =>
+                {
+                    RequireElement(reader, "row");
+                    return new BookLayoutRowNode(ParseElements(reader, row, rowDepth, (column, columnDepth) =>
+                    {
+                        RequireElement(reader, "column");
+                        return new BookLayoutColumnNode(ParseBlocks(reader, column, columnDepth));
+                    }, true));
+                }, true));
+            default:
+                throw InvalidStructure($"Unsupported page element <{block.Name}>.");
+        }
+    }
+
+    private static IReadOnlyList<T> ParseElements<T>(BookXmlReader reader, Token parent, int depth,
+        Func<Token, int, T> parseChild, bool requireChildren = false)
+    {
+        ValidateDepth(depth);
+        ValidateAttributes(parent);
+        reader.Read();
+        var children = new List<T>();
+        if (!parent.Empty)
+        {
+            while (ReadChild(reader))
+            {
+                ValidateDepth(depth + 1);
+                children.Add(parseChild(reader.Current, depth + 1));
+            }
+
+            reader.Read();
+        }
+
+        if (requireChildren && children.Count == 0)
+            throw InvalidStructure($"<{parent.Name}> requires at least one child element.");
+
+        return children.ToArray();
+    }
+
+    private static void ParseEmpty(BookXmlReader reader, Token element)
+    {
+        ValidateAttributes(element);
+        reader.Read();
+        if (element.Empty)
+            return;
+
+        if (reader.Current.Kind != TokenKind.EndElement)
+            throw InvalidStructure($"<{element.Name}> cannot contain text or child elements.");
+
+        reader.Read();
+    }
+
+    private static void ValidateDepth(int depth)
     {
         if (depth > MaxInlineDepth)
-            throw InvalidStructure("Inline formatting exceeds the nesting limit.");
+            throw InvalidStructure("Book formatting exceeds the nesting limit.");
+    }
+
+    private static IReadOnlyList<BookPageNode> ParseInline(BookXmlReader reader, Token parent, int depth)
+    {
+        ValidateDepth(depth);
 
         reader.Read();
         var nodes = new List<BookPageNode>();
@@ -200,8 +266,13 @@ public sealed class BookXmlParser
             if (token.Kind != TokenKind.StartElement)
                 throw InvalidStructure("Only literal text and supported inline elements are allowed here.");
 
+            ValidateDepth(depth + 1);
             switch (token.Name)
             {
+                case "br":
+                    ParseEmpty(reader, token);
+                    nodes.Add(new BookLineBreakNode());
+                    break;
                 case "b":
                     ValidateAttributes(token);
                     nodes.Add(new BookBoldNode(ParseInline(reader, token, depth + 1)));

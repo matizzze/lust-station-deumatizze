@@ -1,4 +1,5 @@
 using System.Numerics;
+using Content.Client.Administration.UI.CustomControls;
 using Content.Client.RichText;
 using Content.Client.UserInterface.Controls;
 using Content.Shared._Lust.Book;
@@ -11,6 +12,7 @@ using Robust.Client.UserInterface.XAML;
 using Robust.Shared.Maths;
 using Robust.Shared.Utility;
 using Robust.Shared.Prototypes;
+using TableContainer = Content.Client.UserInterface.Controls.TableContainer;
 
 namespace Content.Client._Lust.Book;
 
@@ -344,53 +346,113 @@ public sealed partial class BookWindow : FancyWindow
             return;
         }
 
-        FormattedMessage? textMessage = null;
-        foreach (var node in page.Nodes)
+        if (!TryPopulateBlocks(page.Nodes, container))
         {
-            if (node is BookImageNode image)
+            container.DisposeAllChildren();
+            SetError(errorLabel, true);
+        }
+    }
+
+    private bool TryPopulateBlocks(IReadOnlyList<BookPageNode> nodes, BoxContainer container)
+    {
+        FormattedMessage? textMessage = null;
+        foreach (var node in nodes)
+        {
+            if (node is BookParagraphNode or BookHeadingNode)
             {
-                FlushText();
-                if (!_resourceCache.TryGetResource<TextureResource>(image.Source, out var texture))
+                var message = textMessage ??= new FormattedMessage();
+                if (message.Nodes.Count > 0)
+                    message.AddText("\n");
+
+                switch (node)
                 {
-                    // Существующий файл может оказаться повреждённой текстурой при загрузке.
-                    container.DisposeAllChildren();
-                    SetError(errorLabel, true);
-                    Logger.WarningS("book", $"Cannot load book image '{image.Source}'.");
-                    return;
+                    case BookParagraphNode paragraph:
+                        AppendInline(message, paragraph.Children);
+                        break;
+                    case BookHeadingNode heading:
+                        message.PushTag(new MarkupNode("head", new MarkupParameter(heading.Level), null));
+                        if (heading.Level > 3)
+                        {
+                            // HeadingTag ограничивает размер третьим уровнем; продолжаем ту же
+                            // шкалу через разрешённый BoldTag с фиксированным размером шрифта.
+                            var size = (int) Math.Ceiling(FontTag.DefaultSize * 2 / Math.Sqrt(heading.Level));
+                            message.PushTag(new MarkupNode("bold", null, new Dictionary<string, MarkupParameter>
+                            {
+                                ["size"] = new(size),
+                            }));
+                        }
+                        AppendInline(message, heading.Children);
+                        if (heading.Level > 3)
+                            message.Pop();
+                        message.Pop();
+                        break;
                 }
 
-                container.AddChild(new BookImageControl
-                {
-                    Texture = texture.Texture,
-                    Stretch = TextureRect.StretchMode.KeepAspectCentered,
-                    CanShrink = true,
-                    RectClipContent = true,
-                    HorizontalExpand = true,
-                    VerticalAlignment = Control.VAlignment.Top,
-                });
                 continue;
             }
 
-            var message = textMessage ??= new FormattedMessage();
-            if (message.Nodes.Count > 0)
-                message.AddText("\n");
-
+            FlushText();
             switch (node)
             {
-                case BookParagraphNode paragraph:
-                    AppendInline(message, paragraph.Children);
+                case BookImageNode image:
+                    if (!_resourceCache.TryGetResource<TextureResource>(image.Source, out var texture))
+                    {
+                        // Существующий файл может оказаться повреждённой текстурой при загрузке.
+                        Logger.WarningS("book", $"Cannot load book image '{image.Source}'.");
+                        return false;
+                    }
+
+                    container.AddChild(new BookImageControl
+                    {
+                        Texture = texture.Texture,
+                        Stretch = TextureRect.StretchMode.KeepAspectCentered,
+                        CanShrink = true,
+                        RectClipContent = true,
+                        HorizontalExpand = true,
+                        VerticalAlignment = Control.VAlignment.Top,
+                    });
                     break;
-                case BookHeadingNode heading:
-                    message.PushTag(new MarkupNode("head", new MarkupParameter(1), null));
-                    AppendInline(message, heading.Children);
-                    message.Pop();
+                case BookHorizontalRuleNode:
+                    container.AddChild(new HSeparator(DefaultBookTextColor) { HorizontalExpand = true });
                     break;
-                default:
-                    continue;
+                case BookTableNode table:
+                    container.AddChild(CreateTable(table));
+                    break;
+                case BookLayoutNode layout:
+                    var layoutContainer = new BoxContainer
+                    {
+                        Orientation = BoxContainer.LayoutOrientation.Vertical,
+                        HorizontalExpand = true,
+                    };
+                    container.AddChild(layoutContainer);
+                    foreach (var row in layout.Rows)
+                    {
+                        var rowContainer = new BookLayoutRowContainer
+                        {
+                            Orientation = BoxContainer.LayoutOrientation.Horizontal,
+                            HorizontalExpand = true,
+                            SeparationOverride = 0,
+                        };
+                        layoutContainer.AddChild(rowContainer);
+                        foreach (var column in row.Columns)
+                        {
+                            var columnContainer = new BoxContainer
+                            {
+                                Orientation = BoxContainer.LayoutOrientation.Vertical,
+                                HorizontalExpand = true,
+                                VerticalAlignment = Control.VAlignment.Top,
+                            };
+                            rowContainer.AddChild(columnContainer);
+                            if (!TryPopulateBlocks(column.Children, columnContainer))
+                                return false;
+                        }
+                    }
+                    break;
             }
         }
 
         FlushText();
+        return true;
 
         void FlushText()
         {
@@ -402,6 +464,45 @@ public sealed partial class BookWindow : FancyWindow
             container.AddChild(label);
             textMessage = null;
         }
+    }
+
+    private static TableContainer CreateTable(BookTableNode table)
+    {
+        var columns = 1;
+        foreach (var row in table.Rows)
+            columns = Math.Max(columns, row.Cells.Count);
+
+        var container = new TableContainer
+        {
+            Columns = columns,
+            HorizontalExpand = true,
+            // Отступы ячеек дают ненулевую ширину даже пустым таблицам; нулевой минимум
+            // сохраняет ненулевой запас ширины при расчёте пропорций TableContainer.
+            MinForcedColumnWidth = 0,
+        };
+        foreach (var row in table.Rows)
+        {
+            for (var index = 0; index < columns; index++)
+            {
+                var message = new FormattedMessage();
+                if (index < row.Cells.Count)
+                {
+                    var cell = row.Cells[index];
+                    if (cell.IsHeader)
+                        message.PushTag(new MarkupNode("bold", null, null));
+                    AppendInline(message, cell.Children);
+                    if (cell.IsHeader)
+                        message.Pop();
+                }
+
+                var label = CreateTextLabel();
+                label.Margin = new Thickness(4, 2);
+                label.SetMessage(message, XmlAllowedTags, DefaultBookTextColor);
+                container.AddChild(label);
+            }
+        }
+
+        return container;
     }
 
     private static RichTextLabel CreateTextLabel()
@@ -423,6 +524,9 @@ public sealed partial class BookWindow : FancyWindow
             {
                 case BookTextNode text:
                     message.AddText(text.Text);
+                    break;
+                case BookLineBreakNode:
+                    message.AddText("\n");
                     break;
                 case BookBoldNode bold:
                     message.PushTag(new MarkupNode("bold", null, null));
@@ -448,6 +552,28 @@ public sealed partial class BookWindow : FancyWindow
         label.Visible = visible;
         if (visible)
             label.SetMessage(_loc.GetString("book-content-error"), DefaultBookTextColor);
+    }
+
+    private sealed class BookLayoutRowContainer : BoxContainer
+    {
+        protected override Vector2 MeasureOverride(Vector2 availableSize)
+        {
+            if (ChildCount == 0)
+                return Vector2.Zero;
+
+            // Обычный горизонтальный BoxContainer измеряет колонки по очереди;
+            // длинный текст первой колонки не должен забирать ширину остальных.
+            var columnSize = new Vector2(availableSize.X / ChildCount, availableSize.Y);
+            var desired = Vector2.Zero;
+            foreach (var child in Children)
+            {
+                child.Measure(columnSize);
+                desired.X += child.DesiredSize.X;
+                desired.Y = Math.Max(desired.Y, child.DesiredSize.Y);
+            }
+
+            return desired;
+        }
     }
 
     private sealed class BookImageControl : TextureRect

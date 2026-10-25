@@ -143,7 +143,13 @@ public sealed partial class BookSystem : EntitySystem
             remaining -= page.Length;
         }
 
-        return _actionBlocker.CanInteract(actor, book) && _interaction.InRangeAndAccessible(actor, book.Owner);
+        foreach (var tool in _hands.EnumerateHeld(actor))
+        {
+            if (_tag.HasTag(tool, WriteTag))
+                return _actionBlocker.CanInteract(actor, book) && _interaction.InRangeAndAccessible(actor, book.Owner);
+        }
+
+        return false;
     }
 
     private void UpdateAppearance(Entity<BookComponent> book)

@@ -2,7 +2,7 @@
 <book>
   <locale id="en-US">
     <page>
-      <h1><b><color value="black">The Tales of a Tired Janitor</color></b></h1>
+      <h3><b><color value="black">The Tales of a Tired Janitor</color></b></h3>
     </page>
     <page>
       <p><color value="black">Cleaning a space station as a janitor is like being trapped in a cosmic custodial nightmare. You'd think floating through the vastness of space would be glamorous, but no, I'm stuck scrubbing space grime and extraterrestrial goop off the walls. It's a thankless job in a zero-gravity abyss.</color></p>
@@ -19,7 +19,7 @@
   </locale>
   <locale id="ru-RU">
     <page>
-      <h1><b><color value="black">Повести уставшего уборщика</color></b></h1>
+      <h3><b><color value="black">Повести уставшего уборщика</color></b></h3>
     </page>
     <page>
       <p><color value="black">Уборка космической станции в роли уборщика — это как оказаться в кошмаре космического домоуправления. Можно было бы подумать, что плавание в безграничной бездне космоса будет гламуром, но нет — я весь день соскабливаю космическую грязь и инопланетную жижу со стен. Это неблагодарная работа в пустоте нулевой гравитации.</color></p>

@@ -60,6 +60,8 @@ Use this block inside a page or layout column:
 
 Header cells (`th`) are bold. All rows share the maximum cell count of any row. Short rows receive empty trailing cells, so later rows stay aligned. Empty rows are rejected; empty cells are allowed. Cells cannot contain page blocks, images, layouts, or nested tables. Column spans, row spans, borders, and custom style attributes are unsupported.
 
+Each table may render at most 1024 cells, including empty padding: the number of rows multiplied by the maximum cell count of any row must not exceed 1024. The parser rejects larger tables with a page-local `InvalidStructure` error before creating UI controls. For example, 32 rows of up to 32 cells fit the limit; 33 rows with even one 32-cell row exceed it.
+
 ## Rows and columns
 
 Use `layout` for vertically stacked rows, each containing horizontally arranged columns. Each column stacks ordinary page blocks vertically and may contain another `layout` within the depth limit.

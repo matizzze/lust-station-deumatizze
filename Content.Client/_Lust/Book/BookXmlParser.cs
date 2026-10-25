@@ -10,6 +10,7 @@ public sealed class BookXmlParser
     private const string EnglishLocale = "en-US";
     private const int MaxDocumentCharacters = 2_000_000;
     private const int MaxInlineDepth = 32;
+    private const int MaxTableRenderedCells = 1024;
 
     private readonly Func<ResPath, bool> _imageExists;
 
@@ -174,7 +175,7 @@ public sealed class BookXmlParser
                 ParseEmpty(reader, block);
                 return new BookHorizontalRuleNode();
             case "table":
-                return new BookTableNode(ParseElements(reader, block, depth, (row, rowDepth) =>
+                var tableRows = ParseElements(reader, block, depth, (row, rowDepth) =>
                 {
                     RequireElement(reader, "tr");
                     return new BookTableRowNode(ParseElements(reader, row, rowDepth, (cell, cellDepth) =>
@@ -185,7 +186,16 @@ public sealed class BookXmlParser
                         ValidateAttributes(cell);
                         return new BookTableCellNode(cell.Name == "th", ParseInline(reader, cell, cellDepth));
                     }, true));
-                }, true));
+                }, true);
+                var columns = 0;
+                foreach (var row in tableRows)
+                    columns = Math.Max(columns, row.Cells.Count);
+
+                // Учитываем пустые ячейки, которыми renderer дополняет короткие строки.
+                if ((long) tableRows.Count * columns > MaxTableRenderedCells)
+                    throw InvalidStructure($"A table cannot exceed {MaxTableRenderedCells} rendered cells, including padding.");
+
+                return new BookTableNode(tableRows);
             case "layout":
                 return new BookLayoutNode(ParseElements(reader, block, depth, (row, rowDepth) =>
                 {

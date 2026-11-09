@@ -510,7 +510,7 @@ public sealed partial class BookWindow : FancyWindow
         return new RichTextLabel
         {
             HorizontalExpand = true,
-            StyleClasses = { "PaperWrittenText" },
+            StyleClasses = { "BookWrittenText" },
             VerticalAlignment = Control.VAlignment.Top,
         };
     }

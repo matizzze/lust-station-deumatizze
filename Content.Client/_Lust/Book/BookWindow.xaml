@@ -1,7 +1,7 @@
 <controls:FancyWindow xmlns="https://spacestation14.io"
                       xmlns:controls="clr-namespace:Content.Client.UserInterface.Controls"
                       Title="{Loc 'book-ui-title'}"
-                      SetSize="900 650" MinSize="500 300" Resizable="True">
+                      SetSize="1100 750" MinSize="500 300" Resizable="True">
     <BoxContainer Orientation="Vertical" SeparationOverride="8">
         <BoxContainer Name="ReaderContainer" Orientation="Vertical" VerticalExpand="True" SeparationOverride="8">
             <RichTextLabel Name="ContentError" Visible="False" />
@@ -9,7 +9,7 @@
                 <PanelContainer StyleIdentifier="PaperDefaultBorder" HorizontalExpand="True" SizeFlagsStretchRatio="1">
                     <ScrollContainer Name="LeftPageScroll" HScrollEnabled="False" VerticalExpand="True" HorizontalExpand="True">
                         <BoxContainer Orientation="Vertical" Margin="12" SeparationOverride="8" HorizontalExpand="True">
-                            <RichTextLabel Name="LeftPageError" StyleClasses="PaperWrittenText" Visible="False" />
+                            <RichTextLabel Name="LeftPageError" StyleClasses="BookWrittenText" Visible="False" />
                             <BoxContainer Name="LeftPageContent" Orientation="Vertical" SeparationOverride="8" HorizontalExpand="True" />
                         </BoxContainer>
                     </ScrollContainer>
@@ -18,7 +18,7 @@
                 <PanelContainer StyleIdentifier="PaperDefaultBorder" HorizontalExpand="True" SizeFlagsStretchRatio="1">
                     <ScrollContainer Name="RightPageScroll" HScrollEnabled="False" VerticalExpand="True" HorizontalExpand="True">
                         <BoxContainer Orientation="Vertical" Margin="12" SeparationOverride="8" HorizontalExpand="True">
-                            <RichTextLabel Name="RightPageError" StyleClasses="PaperWrittenText" Visible="False" />
+                            <RichTextLabel Name="RightPageError" StyleClasses="BookWrittenText" Visible="False" />
                             <BoxContainer Name="RightPageContent" Orientation="Vertical" SeparationOverride="8" HorizontalExpand="True" />
                         </BoxContainer>
                     </ScrollContainer>

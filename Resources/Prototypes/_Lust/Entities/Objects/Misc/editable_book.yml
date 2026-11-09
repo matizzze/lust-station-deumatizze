@@ -16,3 +16,24 @@
     - LustBookCoverRed
     - LustBookCoverGreen
     selectedCover: LustBookCoverPlain
+
+#############
+## LUST TEST
+- type: entity
+  parent: BookBase
+  id: LustBookXenoArcheologyGuide
+  name: "Xeno Archeology GuideBook"
+  description: There are endless illegible notes scribbled in the margins. Most of the text is covered in handwritten question marks.
+  components:
+  - type: Sprite
+    layers:
+    - state: paper
+    - state: cover_base
+      color: "#3ec78e"
+    - state: decor_wingette
+      color: "#28a15a"
+    - state: icon_atmos
+    - state: icon_corner
+      color: gold
+  - type: Book # Lust edit - Текст книги перенесён в XML.
+    contentPath: /Books/_Lust/Science/XXArtefactsGuide.xml

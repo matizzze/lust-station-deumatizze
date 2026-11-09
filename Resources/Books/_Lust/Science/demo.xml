@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<book>
+  <locale id="en-US">
+    <page>
+      <p>english</p>
+    </page>
+  </locale>
+  <locale id="ru-RU">
+    <page>
+      <h1>Это <i>краткий</i> гайд</h1>
+      <h2>О книжнках</h2>
+      <p>Первая линия.<br/>Вторая линия <b>толстый текст</b> ыыыыыы.</p>
+      <hr/>
+      <p><color value="#00693e">Цветной текст.</color></p>
+      <table>
+        <tr><th>Таблица</th><th>столбик</th></tr>
+        <tr><td>Арбуз</td><td><b>арбуз</b> парсер<br/>огород.</td></tr>
+        <tr><td>Арагупега</td></tr>
+      </table>
+      <layout>
+        <row>
+          <column>
+            <h2>КОЛОНКА</h2>
+            <p>слева</p>
+          </column>
+          <column>
+            <h3>справа</h3>
+            <p><br/>линия.</p>
+            <hr/>
+            <p>текст</p>
+          </column>
+        </row>
+      </layout>
+    </page>
+  </locale>
+</book>

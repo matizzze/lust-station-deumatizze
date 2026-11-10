@@ -1450,9 +1450,11 @@ namespace Content.Client.Stylesheets
                 Element<RichTextLabel>().Class("PaperWrittenText")
                     .Prop(Label.StylePropertyFont, notoSans12)
                     .Prop(Control.StylePropertyModulateSelf, Color.FromHex("#111111")),
+                // Lust-Added-Start
                 Element<RichTextLabel>().Class("BookWrittenText")
                     .Prop(Label.StylePropertyFont, notoSans10)
                     .Prop(Control.StylePropertyModulateSelf, Color.FromHex("#111111")),
+                // Lust-Added-End
 
                 Element<RichTextLabel>().Class("LabelSubText")
                     .Prop(Label.StylePropertyFont, notoSans10)

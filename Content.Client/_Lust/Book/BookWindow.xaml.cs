@@ -12,7 +12,7 @@ using Robust.Client.UserInterface.XAML;
 using Robust.Shared.Maths;
 using Robust.Shared.Utility;
 using Robust.Shared.Prototypes;
-using TableContainer = Content.Client.UserInterface.Controls.TableContainer;
+using TableContainer = Robust.Client.UserInterface.Controls.TableContainer;
 
 namespace Content.Client._Lust.Book;
 
